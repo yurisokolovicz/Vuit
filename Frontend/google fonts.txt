@@ -1,3 +1,5 @@
+'Open+Sans', "Helvetica Neue", Arial, sans-serif
+
 ###################### LATO ##########################
 
 /* latin-ext */

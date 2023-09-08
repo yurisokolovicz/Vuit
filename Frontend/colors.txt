@@ -1,0 +1,28 @@
+background-color: #062642;
+
+Titulo texto branco CAPSLOCK
+color: #FFFFFF;
+
+Titulo texto amarelo
+color: #F0C674;
+
+Paragrafo texto branco
+color: #fff;
+
+Botao texto preto titulo
+color: #000;
+
+Botao texto preto paragrafo
+color: #000;
+
+Botao laranja background
+background: #AD760C;
+color: #FFFFFF; (cor do texto do botao)
+
+Botao verde background
+background: #1B8B1D;
+color: #FFFFFF; (cor do texto do botao)
+
+Botao azul background
+background: #4EABE1;
+color: #EAEAEA; (cor do texto do botao)
