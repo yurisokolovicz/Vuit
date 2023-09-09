@@ -1,19 +1,31 @@
 const express = require("express");
 const router = express();
 
-const data = require("../data.json");
+const servicosVuit = require("../database/servicosVuit.json");
+const vantagensVut = require("../database/vantagensVuit.json");
 
 // testando route
 router.get("/", (req, res) => {
   res.send("API esta funcionando!");
 });
 
-router.get("/api/data", (req, res) => {
+router.get("/api/servicos", (req, res) => {
   try {
-    if (!data) {
-      throw new Error("Os dados nao estao disponiveis.");
+    if (!servicosVuit) {
+      throw new Error("Os servicos nao estao disponiveis.");
     }
-    res.json(data);
+    res.json(servicosVuit);
+  } catch (error) {
+    next(error);
+  }
+});
+
+router.get("/api/vantagens", (req, res) => {
+  try {
+    if (!vantagensVut) {
+      throw new Error("As vantagens nao estao disponiveis.");
+    }
+    res.json(vantagensVut);
   } catch (error) {
     next(error);
   }
