@@ -9,7 +9,9 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav id="nav">
-      <GiHamburgerMenu />
+      <div id="menu">
+        <GiHamburgerMenu id="burguer" />
+      </div>
       <FaArrowRight />
       <ul id="nav-links">
         <NavLink to="/">VUIT SEGUROS</NavLink>
