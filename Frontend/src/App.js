@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
-import Cred from "./pages/Home/Cred/Cred";
-import Beneficios from "./pages/Home/Beneficios/Beneficios";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./App.css";
+import Cred from "./pages/Cred/Cred";
+import Beneficios from "./pages/Beneficios/Beneficios";
 
 function App() {
   return (
