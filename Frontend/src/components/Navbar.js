@@ -11,13 +11,21 @@ const Navbar = () => {
     <nav id="nav">
       <div id="menu">
         <GiHamburgerMenu id="burguer" />
+        <FaArrowRight id="arrow" />
       </div>
-      <FaArrowRight />
-      <ul id="nav-links">
-        <NavLink to="/">VUIT SEGUROS</NavLink>
-        <NavLink to="/cred">VUIT CRED</NavLink>
-        <NavLink to="/beneficios">VUIT BENEFICIOS</NavLink>
-      </ul>
+      <div className="container-menu">
+        <ul id="nav-links">
+          <NavLink className="nav-button" to="/">
+            VUIT SEGUROS
+          </NavLink>
+          <NavLink className="nav-button" to="/cred">
+            VUIT CRED
+          </NavLink>
+          <NavLink className="nav-button" to="/beneficios">
+            VUIT BENEFICIOS
+          </NavLink>
+        </ul>
+      </div>
     </nav>
   );
 };
