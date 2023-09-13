@@ -1,0 +1,8 @@
+.App {
+  background-color: #062642;
+  color: #ffffff;
+  background: url("../src/img/Homepage/backgrounds/vuit-background-img.png")
+    no-repeat scroll padding-box;
+  background-position: top center;
+  height: 4000px;
+}
