@@ -12,13 +12,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
-        {/* <div className="container"> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cred" element={<Cred />} />
           <Route path="/beneficios" element={<Beneficios />} />
         </Routes>
-        {/* </div> */}
         <Footer />
       </BrowserRouter>
     </div>
