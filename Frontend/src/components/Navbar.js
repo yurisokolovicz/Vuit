@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    setShowHamburgerMenu(false);
+    setShowHamburgerMenu(!showHamburgerMenu);
     console.log(menuOpen);
   };
 
@@ -22,7 +22,11 @@ const Navbar = () => {
 
   return (
     <nav id="nav">
-      <div id="menu" className={`menu ${menuOpen ? "expanded" : ""}`}>
+      <div
+        id="menu"
+        className={`menu ${menuOpen ? "expanded" : ""}`}
+        onClick={toggleMenu}
+      >
         {showHamburgerMenu ? (
           <GiHamburgerMenu id="burguer" onClick={toggleMenu} />
         ) : (
