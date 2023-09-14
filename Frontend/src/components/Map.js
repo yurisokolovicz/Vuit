@@ -18,10 +18,10 @@ const Map = () => {
             lat: 28.53840782483288,
             lng: -81.37915304212855,
           }}
-          zoom={12}
+          zoom={13}
         ></GoogleMap>
       ) : (
-        <>{<p>Loading...</p>}</>
+        <>{<p>Carregando Mapa...</p>}</>
       )}
     </div>
   );
