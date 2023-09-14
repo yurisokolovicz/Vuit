@@ -1,7 +1,11 @@
 #footer {
-    margin-top: 3700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin-top: 3700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map {
+  height: 50vh;
 }
