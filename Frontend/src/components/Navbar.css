@@ -49,6 +49,7 @@
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  z-index: 999;
 }
 
 #burguer {
@@ -66,7 +67,7 @@
   top: 30px;
   right: 30px;
   scale: 2.5;
-  color: rgb(37, 64, 137);
+  color: black;
   cursor: pointer;
   z-index: 999;
 }
