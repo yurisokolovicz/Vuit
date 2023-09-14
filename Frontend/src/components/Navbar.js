@@ -30,12 +30,6 @@ const Navbar = () => {
         ) : (
           <FaArrowRight id="arrow" onClick={toggleMenu} />
         )}
-      </div>
-      <div
-        id="div-arrow"
-        onClick={toggleMenu}
-        className={`container-menu ${menuOpen ? "expanded" : ""}`}
-      >
         <ul
           id="nav-links"
           className={menuOpen ? "nav-link" : "nav-link hidden"}
