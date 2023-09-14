@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import "./App.css";
 import Cred from "./pages/Cred/Cred";
 import Beneficios from "./pages/Beneficios/Beneficios";
+import Map from "./components/Map";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/cred" element={<Cred />} />
           <Route path="/beneficios" element={<Beneficios />} />
         </Routes>
+        <Map />
         <Footer />
       </BrowserRouter>
     </div>
