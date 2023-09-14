@@ -10,15 +10,15 @@ const Map = () => {
   });
 
   return (
-    <div id="map">
+    <div id="map-container">
       {isLoaded ? (
         <GoogleMap
           mapContainerStyle={{ width: "100%", height: "100%" }}
           center={{
-            lat: 28.51737959596134,
-            lng: -81.27331400349591,
+            lat: 28.53840782483288,
+            lng: -81.37915304212855,
           }}
-          zoom={10}
+          zoom={12}
         ></GoogleMap>
       ) : (
         <>{<p>Loading...</p>}</>
