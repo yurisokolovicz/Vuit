@@ -5,11 +5,11 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <footer id="home">
+    <div id="home">
       <img src={vuitImage} alt="Background" />
       <p>SUA EMPRESA MUITO MAIS SEGURA</p>
       <p>Icones redes sociais</p>
-    </footer>
+    </div>
   );
 };
 

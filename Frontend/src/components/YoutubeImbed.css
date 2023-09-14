@@ -1,0 +1,14 @@
+#youtube-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 90vh; /* Defina a largura e altura igual para criar um quadrado */
+  height: 60vh;
+  margin: 50px auto; /* Centralize verticalmente e adicione margem superior */
+}
+
+#youtube-container h4 {
+  color: #f0c674;
+}

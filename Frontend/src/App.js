@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import "./App.css";
 import Cred from "./pages/Cred/Cred";
 import Beneficios from "./pages/Beneficios/Beneficios";
+import YoutubeImbed from "./components/YoutubeImbed";
 import Map from "./components/Map";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/cred" element={<Cred />} />
           <Route path="/beneficios" element={<Beneficios />} />
         </Routes>
+        <YoutubeImbed />
         <Map />
         <Footer />
       </BrowserRouter>

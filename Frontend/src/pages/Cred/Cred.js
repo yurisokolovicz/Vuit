@@ -5,11 +5,11 @@ import "./Cred.css";
 
 const Cred = () => {
   return (
-    <footer id="cred">
+    <div id="cred">
       <img src={credImage} alt="Background" />
       <p>CRÉDITO CONSGINADO ÁGIL E SEM BUROCRACIA</p>
       <p>Icones redes sociais</p>
-    </footer>
+    </div>
   );
 };
 
