@@ -33,17 +33,24 @@ const Navbar = () => {
           <FaArrowRight id="arrow" onClick={toggleHamburger} />
         )}
       </div>
-      <div className="container-menu">
-        <ul id="nav-links">
-          <NavLink className="nav-button" to="/">
-            VUIT SEGUROS
-          </NavLink>
-          <NavLink className="nav-button" to="/cred">
-            VUIT CRED
-          </NavLink>
-          <NavLink className="nav-button" to="/beneficios">
-            VUIT BENEFICIOS
-          </NavLink>
+      <div className={`container-menu ${menuOpen ? "expanded" : ""}`}>
+        <ul
+          id="nav-links"
+          className={menuOpen ? "nav-link" : "nav-link hidden"}
+        >
+          {menuOpen && (
+            <>
+              <NavLink className="nav-button" to="/">
+                VUIT SEGUROS
+              </NavLink>
+              <NavLink className="nav-button" to="/cred">
+                VUIT CRED
+              </NavLink>
+              <NavLink className="nav-button" to="/beneficios">
+                VUIT BENEFICIOS
+              </NavLink>
+            </>
+          )}
         </ul>
       </div>
     </nav>
