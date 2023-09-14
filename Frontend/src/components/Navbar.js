@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaArrowRight } from "react-icons/fa";
-
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -13,11 +11,11 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
     setShowHamburgerMenu(!showHamburgerMenu);
-    console.log(menuOpen);
   };
 
   const toggleHamburger = () => {
     setShowHamburgerMenu(true);
+    setMenuOpen(true);
   };
 
   return (
@@ -28,12 +26,16 @@ const Navbar = () => {
         onClick={toggleMenu}
       >
         {showHamburgerMenu ? (
-          <GiHamburgerMenu id="burguer" onClick={toggleMenu} />
+          <GiHamburgerMenu id="burguer" onClick={toggleHamburger} />
         ) : (
-          <FaArrowRight id="arrow" onClick={toggleHamburger} />
+          <FaArrowRight id="arrow" onClick={toggleMenu} />
         )}
       </div>
-      <div className={`container-menu ${menuOpen ? "expanded" : ""}`}>
+      <div
+        id="div-arrow"
+        onClick={toggleMenu}
+        className={`container-menu ${menuOpen ? "expanded" : ""}`}
+      >
         <ul
           id="nav-links"
           className={menuOpen ? "nav-link" : "nav-link hidden"}
