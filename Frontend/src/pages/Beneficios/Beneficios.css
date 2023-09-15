@@ -5,3 +5,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.container-beneficios {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
