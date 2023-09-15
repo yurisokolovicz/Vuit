@@ -1,0 +1,10 @@
+.contato-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-media {
+  width: 700px !important;
+}
