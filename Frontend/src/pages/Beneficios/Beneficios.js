@@ -1,8 +1,8 @@
 import React from "react";
 
+import IntroBeneficios from "../../components/IntroBeneficios";
 import credImage from "../../../src/img/cred/block_images/vuit-img.png";
 import "./Beneficios.css";
-import YoutubeImbedBeneficios from "../../components/YoutubeImbedBeneficios";
 
 const Beneficios = () => {
   return (
@@ -10,7 +10,7 @@ const Beneficios = () => {
       <div className="container-beneficios">
         <img src={credImage} alt="Background" />
         <p>SUA EMPRESA MUITO MAIS SEGURA</p>
-        <YoutubeImbedBeneficios />
+        <IntroBeneficios />
       </div>
     </div>
   );

@@ -1,16 +1,17 @@
 import React from "react";
 
-import "./YoutubeImbedCred.css";
+import "./IntroHome.css";
 
-const YoutubeImbedCred = () => {
+const IntroHome = () => {
   return (
     <div className="video-container">
       <h3>O QUE É O GRUPO VUIT</h3>
+      <h4>O GRUPO VUIT</h4>
       <iframe
         // Proporção original: 16/9
         width="700"
         height="394"
-        src="https://www.youtube.com/embed/kdPSpUR9BLY?si=w3qNc5oU6pqDucBm"
+        src="https://www.youtube.com/embed/44gxvIpnsM8?si=GnTj1kyrHwNrVWPm"
         title="O Grupo Vuit"
         frameBorder="0"
         allowFullScreen
@@ -29,4 +30,4 @@ const YoutubeImbedCred = () => {
   );
 };
 
-export default YoutubeImbedCred;
+export default IntroHome;

@@ -1,13 +1,20 @@
 import React from "react";
 
-import "./YoutubeImbedBeneficios.css";
+import "./IntroCred.css";
 
-const YoutubeImbedBeneficios = () => {
+const IntroCred = () => {
   return (
     <div className="video-container">
       <h3>O QUE É O GRUPO VUIT</h3>
-      <h4>O GRUPO VUIT</h4>
-      {/* Video em outros componentes similares */}
+      <iframe
+        // Proporção original: 16/9
+        width="700"
+        height="394"
+        src="https://www.youtube.com/embed/kdPSpUR9BLY?si=w3qNc5oU6pqDucBm"
+        title="O Grupo Vuit"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
       <p>
         Vuit surge da necessidade de expansão de uma grande operação já
         existente, orientada para a customização da gestão de seguros de vida,
@@ -22,4 +29,4 @@ const YoutubeImbedBeneficios = () => {
   );
 };
 
-export default YoutubeImbedBeneficios;
+export default IntroCred;
