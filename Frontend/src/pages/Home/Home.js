@@ -1,6 +1,6 @@
 import React from "react";
 
-import YoutubeImbed from "../../components/YoutubeImbed";
+import YoutubeImbedHome from "../../components/YoutubeImbedHome";
 import vuitImage from "../../../src/img/Homepage/block_images/vuit-img.png";
 import "./Home.css";
 
@@ -11,7 +11,7 @@ const Home = () => {
         <img src={vuitImage} alt="Background" />
         <p>SUA EMPRESA MUITO MAIS SEGURA</p>
         <p>Icones redes sociais</p>
-        <YoutubeImbed />
+        <YoutubeImbedHome />
       </div>
     </div>
   );

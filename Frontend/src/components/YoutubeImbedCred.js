@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./YoutubeImbed.css";
+import "./YoutubeImbedCred.css";
 
-const YoutubeImbed = () => {
+const YoutubeImbedCred = () => {
   return (
     <div className="video-container">
       <h3>O QUE É O GRUPO VUIT</h3>
@@ -11,10 +11,10 @@ const YoutubeImbed = () => {
         // Proporção original: 16/9
         width="700"
         height="394"
-        src="https://www.youtube.com/embed/44gxvIpnsM8?si=GnTj1kyrHwNrVWPm"
+        src="https://www.youtube.com/embed/kdPSpUR9BLY?si=w3qNc5oU6pqDucBm"
         title="O Grupo Vuit"
-        frameborder="0"
-        allowfullscreen
+        frameBorder="0"
+        allowFullScreen
       ></iframe>
       <p>
         Vuit surge da necessidade de expansão de uma grande operação já
@@ -30,4 +30,4 @@ const YoutubeImbed = () => {
   );
 };
 
-export default YoutubeImbed;
+export default YoutubeImbedCred;
