@@ -20,9 +20,11 @@ function App() {
           <Route path="/cred" element={<Cred />} />
           <Route path="/beneficios" element={<Beneficios />} />
         </Routes>
-        <YoutubeImbed />
-        <Map />
-        <Footer />
+        <div className="container-app">
+          <YoutubeImbed />
+          <Map />
+          <Footer />
+        </div>
       </BrowserRouter>
     </div>
   );

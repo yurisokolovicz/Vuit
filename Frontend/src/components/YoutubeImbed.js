@@ -4,10 +4,18 @@ import "./YoutubeImbed.css";
 
 const YoutubeImbed = () => {
   return (
-    <div id="youtube-container">
+    <div className="video-container">
       <h3>O QUE É O GRUPO VUIT</h3>
       <h4>O GRUPO VUIT</h4>
-      <p> --Video here--</p>
+      <iframe
+        // Proporção original: 16/9
+        width="700"
+        height="394"
+        src="https://www.youtube.com/embed/44gxvIpnsM8?si=GnTj1kyrHwNrVWPm"
+        title="O Grupo Vuit"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
       <p>
         Vuit surge da necessidade de expansão de uma grande operação já
         existente, orientada para a customização da gestão de seguros de vida,

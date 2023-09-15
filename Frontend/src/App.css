@@ -4,5 +4,16 @@
   background: url("../src/img/Homepage/backgrounds/vuit-background-img.png")
     no-repeat scroll padding-box;
   background-position: top center;
-  height: 300vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
 }
