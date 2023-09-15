@@ -12,6 +12,12 @@ const Home = () => {
         <p>SUA EMPRESA MUITO MAIS SEGURA</p>
         <p>Icones redes sociais</p>
         <IntroHome />
+        <button>Baixe PDF apresentação Tudo na Vuit!</button>
+        <p> (Criar) componente de separacao _______ ^ ______</p>
+        <p> Add Vuit Beneficios</p>
+        <p> (Criar) componente de separacao _______ ^ ______</p>
+        <p> Add Vuit Cred</p>
+        <p> (Criar) componente de separacao _______ ^ ______</p>
       </div>
     </div>
   );

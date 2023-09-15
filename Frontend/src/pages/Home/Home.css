@@ -13,3 +13,9 @@
   justify-content: center;
   width: 40%;
 }
+
+.container-home button {
+  width: 600px;
+  height: 40px;
+  border-radius: 50px;
+}
