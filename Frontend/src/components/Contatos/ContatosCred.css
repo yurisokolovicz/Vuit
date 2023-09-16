@@ -1,0 +1,21 @@
+.contato-cred-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato-cred-container h3 {
+  align-self: start;
+  align-items: left;
+}
+
+.contato-cred-container h4 {
+  color: #f0c674;
+  align-self: start;
+  align-items: left;
+}
+
+.contato-cred-container .instagram-media {
+  width: 700px !important;
+}

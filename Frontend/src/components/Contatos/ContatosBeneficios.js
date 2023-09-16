@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import "./Contatos.css";
+import "./ContatosHome.css";
 
-const Contatos = () => {
+const ContatosHome = () => {
   useEffect(() => {
     if (window.instgrm) {
       window.instgrm.Embeds.process();
@@ -10,21 +10,14 @@ const Contatos = () => {
   }, []);
 
   return (
-    <div className="contato-container">
+    <div className="contato-beneficios-container">
       <Helmet>
         <script src="https://www.instagram.com/embed.js" async defer />
-        {/* O Codigo comentado abaixo leva a um erro quando saimos e voltamos pra rota contendo o feed do instagram */}
-        {/* <script
-          type="text/javascript"
-          src="https://www.embedista.com/j/instagramfeed.js"
-          async
-          defer
-        /> */}
       </Helmet>
-      <h3>CONTATOS</h3>
+      <h3>CONTATO</h3>
       <blockquote
         className="instagram-media"
-        data-instgrm-permalink="https://www.instagram.com/vuitseguros/"
+        data-instgrm-permalink="https://www.instagram.com/vuitbeneficios/"
         data-instgrm-version="12"
         style={{
           background: "#FFF",
@@ -46,4 +39,4 @@ const Contatos = () => {
   );
 };
 
-export default Contatos;
+export default ContatosHome;

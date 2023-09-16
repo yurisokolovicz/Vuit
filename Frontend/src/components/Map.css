@@ -2,8 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
-  width: 90vh;
-  height: 60vh;
-  margin: 50px auto;
+  width: 700px;
+  height: 394px;
 }
