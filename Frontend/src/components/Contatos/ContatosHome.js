@@ -33,8 +33,6 @@ const ContatosHome = () => {
           maxHeight: "100%",
         }}
       ></blockquote>
-      <p>Add botao aqui</p>
-      <p>Add botao aqui</p>
     </div>
   );
 };

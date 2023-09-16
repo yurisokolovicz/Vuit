@@ -1,8 +1,9 @@
 import React from "react";
 
+import vuitImage from "../../../src/img/Homepage/block_images/vuit-img.png";
 import IntroHome from "../../components/IntroHome";
 import ContatosHome from "../../components/Contatos/ContatosHome";
-import vuitImage from "../../../src/img/Homepage/block_images/vuit-img.png";
+import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import "./Home.css";
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
         <p> Add Vuit Cred</p>
         <p> (Criar) componente de separacao _______ ^ ______</p>
         <ContatosHome />
+        <BotaoWhatsapp />
         <p> (Criar) componente de separacao _______ ^ ______</p>
       </div>
     </div>

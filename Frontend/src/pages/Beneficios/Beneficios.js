@@ -1,8 +1,9 @@
 import React from "react";
 
-import IntroBeneficios from "../../components/IntroBeneficios";
-import ContatosHome from "../../components/Contatos/ContatosBeneficios";
 import credImage from "../../../src/img/cred/block_images/vuit-img.png";
+import IntroBeneficios from "../../components/IntroBeneficios";
+import ContatosBeneficios from "../../components/Contatos/ContatosBeneficios";
+import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import "./Beneficios.css";
 
 const Beneficios = () => {
@@ -12,7 +13,10 @@ const Beneficios = () => {
         <img src={credImage} alt="Background" />
         <p>SUA EMPRESA MUITO MAIS SEGURA</p>
         <IntroBeneficios />
-        <ContatosHome />
+        <p> (Criar) componente de separacao _______ ^ ______</p>
+        <ContatosBeneficios />
+        <BotaoWhatsapp />
+        <p> (Criar) componente de separacao _______ ^ ______</p>
       </div>
     </div>
   );
