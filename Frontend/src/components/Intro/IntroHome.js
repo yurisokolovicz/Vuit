@@ -1,6 +1,6 @@
 import React from "react";
 
-import YoutubeHome from "../Youtube/YoutubeHome";
+import Youtube from "../Youtube/Youtube";
 import "./IntroHome.css";
 
 const IntroHome = () => {
@@ -8,7 +8,10 @@ const IntroHome = () => {
     <div className="video-container">
       <h3>O QUE É O GRUPO VUIT</h3>
       <h4>O GRUPO VUIT</h4>
-      <YoutubeHome />
+      <Youtube
+        src="https://www.youtube.com/embed/44gxvIpnsM8?si=GnTj1kyrHwNrVWPm"
+        title="O Grupo Vuit"
+      />
       <p>
         Vuit surge da necessidade de expansão de uma grande operação já
         existente, orientada para a customização da gestão de seguros de vida,
