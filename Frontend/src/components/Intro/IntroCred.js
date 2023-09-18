@@ -1,13 +1,13 @@
 import React from "react";
 
-import VideoPlayerCred from "../VideoPlayer/VideoPlayerCred";
+import YoutubeCred from "../Youtube/YoutubeCred";
 import "./IntroCred.css";
 
 const IntroCred = () => {
   return (
     <div className="video-container">
       <h3>O QUE É O GRUPO VUIT</h3>
-      <VideoPlayerCred />
+      <YoutubeCred />
       <p>
         Vuit surge da necessidade de expansão de uma grande operação já
         existente, orientada para a customização da gestão de seguros de vida,

@@ -1,6 +1,6 @@
 import React from "react";
 
-const VideoPlayerHome = () => {
+const YoutubeHome = () => {
   return (
     <iframe
       width="700"
@@ -13,4 +13,4 @@ const VideoPlayerHome = () => {
   );
 };
 
-export default VideoPlayerHome;
+export default YoutubeHome;

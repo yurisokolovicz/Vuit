@@ -1,6 +1,6 @@
 import React from "react";
 
-const VideoPlayerCred = () => {
+const YoutubeCred = () => {
   return (
     <iframe
       width="700"
@@ -13,4 +13,4 @@ const VideoPlayerCred = () => {
   );
 };
 
-export default VideoPlayerCred;
+export default YoutubeCred;
