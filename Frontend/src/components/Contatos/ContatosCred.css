@@ -5,12 +5,12 @@
   align-items: center;
 }
 
-.contato-cred-container h3 {
+.contato-cred-text-container h3 {
   align-self: start;
   align-items: left;
 }
 
-.contato-cred-container h4 {
+.contato-cred-text-container h4 {
   color: #f0c674;
   align-self: start;
   align-items: left;

@@ -1,7 +1,7 @@
 import React from "react";
 
 import vuitImage from "../../../src/img/Homepage/block_images/vuit-img.png";
-import IntroHome from "../../components/IntroHome";
+import IntroHome from "../../components/Intro/IntroHome";
 import ContatosHome from "../../components/Contatos/ContatosHome";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import "./Home.css";

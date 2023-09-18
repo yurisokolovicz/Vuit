@@ -14,8 +14,10 @@ const ContatosHome = () => {
       <Helmet>
         <script src="https://www.instagram.com/embed.js" async defer />
       </Helmet>
-      <h3>CONTATOS</h3>
-      <h4>VAMOS CONVERSAR?</h4>
+      <div className="contato-cred-text-container">
+        <h3>CONTATOS</h3>
+        <h4>VAMOS CONVERSAR?</h4>
+      </div>
       <p>
         Venha fazer parte deste ecossistema que tem mudado a vida das pessoas.
         Será um prazer tê-los conosco.

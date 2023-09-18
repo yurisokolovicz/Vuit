@@ -1,7 +1,7 @@
 import React from "react";
 
 import credImage from "../../../src/img/cred/block_images/vuit-img.png";
-import IntroCred from "../../components/IntroCred";
+import IntroCred from "../../components/Intro/IntroCred";
 import ContatosCred from "../../components/Contatos/ContatosCred";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import "./Cred.css";

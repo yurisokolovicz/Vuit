@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
-import Navbar from "./components/Navbar";
 import Cred from "./pages/Cred/Cred";
 import Beneficios from "./pages/Beneficios/Beneficios";
-import Map from "./components/Map";
+import GoogleMapApi from "./components/GoogleMapApi/GoogleMapApi";
+
 import "./App.css";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <Route path="/beneficios" element={<Beneficios />} />
       </Routes>
       <div className="container-map">
-        <Map />
+        <GoogleMapApi />
       </div>
       <Footer />
     </BrowserRouter>

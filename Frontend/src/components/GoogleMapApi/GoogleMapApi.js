@@ -1,16 +1,16 @@
 import React from "react";
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 
-import "./Map.css";
+import "./GoogleMapApi.css";
 
-const Map = () => {
+const GoogleMapApi = () => {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     googleMapsApiKey: "AIzaSyATbm3m875KnavZy2akpSvnXUEiAoasjr8",
   });
 
   return (
-    <div id="Map">
+    <div id="Map-api">
       {isLoaded ? (
         <GoogleMap
           mapContainerStyle={{ width: "100%", height: "100%" }}
@@ -27,4 +27,4 @@ const Map = () => {
   );
 };
 
-export default Map;
+export default GoogleMapApi;
