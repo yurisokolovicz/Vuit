@@ -1,6 +1,6 @@
 import React from "react";
 
-import InstagramVuitCred from "../Instagram/InstagramVuitCred";
+import Instagram from "../Instagram/Instagram";
 import "./ContatosCred.css";
 
 const ContatosCred = () => {
@@ -14,7 +14,7 @@ const ContatosCred = () => {
         Venha fazer parte deste ecossistema que tem mudado a vida das pessoas.
         Será um prazer tê-los conosco.
       </p>
-      <InstagramVuitCred />
+      <Instagram link="https://www.instagram.com/vuitcred/" />
     </div>
   );
 };
