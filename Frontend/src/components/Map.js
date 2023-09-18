@@ -10,7 +10,7 @@ const Map = () => {
   });
 
   return (
-    <div id="map-container">
+    <div id="Map">
       {isLoaded ? (
         <GoogleMap
           mapContainerStyle={{ width: "100%", height: "100%" }}

@@ -1,9 +1,11 @@
 #home {
-  margin-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url("../../../public/img/Homepage/backgrounds/home-background-img.png")
+    no-repeat scroll padding-box;
+  padding-top: 60px;
 }
 
 .container-home {

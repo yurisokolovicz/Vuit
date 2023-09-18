@@ -4,6 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url("../../../public/img/cred/backgrounds/cred-background-img.png")
+    no-repeat scroll padding-box;
+  margin-top: -20px;
+  padding-top: 150px;
 }
 
 .container-cred {

@@ -1,4 +1,4 @@
-.App {
+/* .App {
   background-color: #062642;
   color: #ffffff;
   background: url("../src/img/Homepage/backgrounds/vuit-background-img.png")
@@ -8,12 +8,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
-.container-app {
+/* .container-app {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 40%;
+} */
+
+.container-map {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

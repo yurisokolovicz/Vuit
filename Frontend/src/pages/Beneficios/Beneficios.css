@@ -4,6 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url("../../../public/img/beneficios/backgrounds/beneficios-background-img.png")
+    no-repeat scroll padding-box;
+  margin-top: -20px;
+  padding-top: 100px;
 }
 
 .container-beneficios {
