@@ -1,5 +1,6 @@
 import React from "react";
 
+import VideoPlayerHome from "../VideoPlayer/VideoPlayerHome";
 import "./IntroHome.css";
 
 const IntroHome = () => {
@@ -7,15 +8,7 @@ const IntroHome = () => {
     <div className="video-container">
       <h3>O QUE É O GRUPO VUIT</h3>
       <h4>O GRUPO VUIT</h4>
-      <iframe
-        // Proporção original: 16/9
-        width="700"
-        height="394"
-        src="https://www.youtube.com/embed/44gxvIpnsM8?si=GnTj1kyrHwNrVWPm"
-        title="O Grupo Vuit"
-        frameBorder="0"
-        allowFullScreen
-      ></iframe>
+      <VideoPlayerHome />
       <p>
         Vuit surge da necessidade de expansão de uma grande operação já
         existente, orientada para a customização da gestão de seguros de vida,
