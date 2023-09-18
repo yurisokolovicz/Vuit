@@ -1,9 +1,9 @@
 import React from "react";
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 
-import "./GoogleMapApi.css";
+import "./GoogleMapsApi.css";
 
-const GoogleMapApi = () => {
+const GoogleMapsApi = () => {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     googleMapsApiKey: "AIzaSyATbm3m875KnavZy2akpSvnXUEiAoasjr8",
@@ -27,4 +27,4 @@ const GoogleMapApi = () => {
   );
 };
 
-export default GoogleMapApi;
+export default GoogleMapsApi;
