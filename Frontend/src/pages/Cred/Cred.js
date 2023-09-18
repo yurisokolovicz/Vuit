@@ -5,6 +5,7 @@ import IntroCred from "../../components/Intro/IntroCred";
 import ContatosCred from "../../components/Contatos/ContatosCred";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import "./Cred.css";
+import BotaoTelefone from "../../components/Botoes/BotaoWhatsapp/BotaoTelefone";
 
 const Cred = () => {
   return (
@@ -17,6 +18,7 @@ const Cred = () => {
         <p> (Criar) componente de separacao _______ ^ ______</p>
         <ContatosCred />
         <BotaoWhatsapp />
+        <BotaoTelefone />
         <p> (Criar) componente de separacao _______ ^ ______</p>
       </div>
     </div>

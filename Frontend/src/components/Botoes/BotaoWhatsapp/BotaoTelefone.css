@@ -1,5 +1,6 @@
-.botao-whatsapp button {
-  background: #1b8b1d;
+.botao-telefone button {
+  margin-top: 10px;
+  background: #4eabe1;
   color: #ffffff;
   font-size: 1.1rem;
   border-radius: 50px;

@@ -5,6 +5,7 @@ import IntroHome from "../../components/Intro/IntroHome";
 import ContatosHome from "../../components/Contatos/ContatosHome";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import "./Home.css";
+import BotaoTelefone from "../../components/Botoes/BotaoWhatsapp/BotaoTelefone";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         <p> (Criar) componente de separacao _______ ^ ______</p>
         <ContatosHome />
         <BotaoWhatsapp />
+        <BotaoTelefone />
         <p> (Criar) componente de separacao _______ ^ ______</p>
       </div>
     </div>
