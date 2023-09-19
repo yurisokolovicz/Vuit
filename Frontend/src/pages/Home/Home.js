@@ -4,8 +4,9 @@ import vuitImage from "../../../src/img/Homepage/block_images/vuit-img.png";
 import IntroHome from "../../components/Intro/IntroHome";
 import ContatosHome from "../../components/Contatos/ContatosHome";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
-import BotaoTelefone from "../../components/Botoes/BotaoWhatsapp/BotaoTelefone";
+import BotaoTelefone from "../../components/Botoes/BotaoTelefone/BotaoTelefone";
 import Separacao from "../../components/Separacao/Separacao";
+import BotaoBaixePdf from "../../components/Botoes/BotaoBaixePdf/BotaoBaixePdf";
 import "./Home.css";
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
         <p>SUA EMPRESA MUITO MAIS SEGURA</p>
         <p>Icones redes sociais</p>
         <IntroHome />
-        <button>Baixe PDF apresentação Tudo na Vuit!</button>
+        <BotaoBaixePdf />
         <Separacao />
         <p>Add Vuit Seguros</p>
         <Separacao />
