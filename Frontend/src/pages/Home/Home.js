@@ -7,6 +7,7 @@ import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import BotaoTelefone from "../../components/Botoes/BotaoTelefone/BotaoTelefone";
 import Separacao from "../../components/Separacao/Separacao";
 import BotaoBaixePdf from "../../components/Botoes/BotaoBaixePdf/BotaoBaixePdf";
+import BotaoProposta from "../../components/Botoes/BotaoProposta/BotaoProposta";
 import "./Home.css";
 
 const Home = () => {
@@ -20,10 +21,13 @@ const Home = () => {
         <BotaoBaixePdf />
         <Separacao />
         <p>Add Vuit Seguros</p>
+        <BotaoProposta texto="Solicite uma proposta Vuit Seguros" />
         <Separacao />
         <p>Add Vuit Beneficios</p>
+        <BotaoProposta texto="Solicite uma proposta Vuit Benefícios" />
         <Separacao />
         <p>Add Vuit Cred</p>
+        <BotaoProposta texto="Solicite uma proposta Vuit Cred" />
         <Separacao />
         <ContatosHome />
         <BotaoWhatsapp />

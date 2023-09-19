@@ -1,0 +1,27 @@
+.botao-proposta button {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ad760c;
+  color: #ffffff;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  border-width: 2px;
+  border-color: #ffffff;
+  border-style: solid;
+  box-shadow: 0px 0px 20px 0px #00000010;
+  text-align: center;
+  cursor: pointer;
+  width: 700px !important;
+  height: 60px !important;
+  transition: transform 0.3s ease;
+}
+
+.botao-proposta button:hover {
+  transform: scale(1.025);
+}
+
+.botao-proposta button svg {
+  margin-right: 10px;
+}
