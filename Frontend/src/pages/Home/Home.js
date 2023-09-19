@@ -19,7 +19,6 @@ const Home = () => {
       <div className="container-home">
         <img src={vuitImage} alt="Background" />
         <p>SUA EMPRESA MUITO MAIS SEGURA</p>
-
         <div className="home-icons-container">
           <MdEmail className="MdEmail" />
           <FaPhoneSquare className="FaPhoneSquare" />
@@ -28,7 +27,6 @@ const Home = () => {
           <BsYoutube className="BsYoutube" />
           <FaLinkedin className="FaLinkedin" />
         </div>
-
         <IntroHome />
         <BotaoBaixePdf />
         <Separacao />

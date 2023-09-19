@@ -7,6 +7,9 @@ import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import BotaoTelefone from "../../components/Botoes/BotaoTelefone/BotaoTelefone";
 import Separacao from "../../components/Separacao/Separacao";
 import BotaoProposta from "../../components/Botoes/BotaoProposta/BotaoProposta";
+import { MdEmail } from "react-icons/md";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
 import "./Cred.css";
 
 const Cred = () => {
@@ -15,7 +18,12 @@ const Cred = () => {
       <div className="container-cred">
         <img src={credImage} alt="Background" />
         <p>CRÉDITO CONSGINADO ÁGIL E SEM BUROCRACIA</p>
-        <p>Icones redes sociais</p>
+        <div className="cred-icons-container">
+          <MdEmail className="MdEmail" />
+          <FaFacebook className="FaFacebook" />
+          <BsInstagram className="BsInstagram" />
+          <FaLinkedin className="FaLinkedin" />
+        </div>
         <IntroCred />
         <Separacao />
         <p>Add Vuit Cred</p>
