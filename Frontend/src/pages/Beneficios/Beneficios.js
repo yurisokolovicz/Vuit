@@ -10,6 +10,7 @@ import BotaoProposta from "../../components/Botoes/BotaoProposta/BotaoProposta";
 import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
+import Baner from "../../components/Baner/Baner";
 import "./Beneficios.css";
 
 const Beneficios = () => {
@@ -26,15 +27,23 @@ const Beneficios = () => {
         </div>
         <IntroBeneficios />
         <Separacao />
+        <Baner
+          src={require("../../img/Homepage/block_images/vuit-beneficios.png")}
+        />
         <p>Add Vuit Beneficios</p>
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
+        <Baner src={require("../../img/cred/block_images/vuit-escolha.png")} />
         <p>Por que escolher a Vuit</p>
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
+        <Baner src={require("../../img/cred/block_images/vuit-nacional.png")} />
         <p>Atuacao Nacional</p>
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
+        <Baner
+          src={require("../../img/beneficios/block_images/vuit-outros-servicos.png")}
+        />
         <p>Outros Servicos</p>
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
