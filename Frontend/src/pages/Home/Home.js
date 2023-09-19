@@ -12,6 +12,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneSquare, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import "./Home.css";
+import Baner from "../../components/Baner/Baner";
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
         <IntroHome />
         <BotaoBaixePdf />
         <Separacao />
+        <Baner />
         <p>Add Vuit Seguros</p>
         <BotaoProposta texto="Solicite uma proposta Vuit Seguros" />
         <Separacao />
