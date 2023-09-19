@@ -19,6 +19,7 @@
 }
 
 .beneficios-icons-container {
+  cursor: pointer;
   margin-top: 10px;
   display: flex;
   flex-direction: row;

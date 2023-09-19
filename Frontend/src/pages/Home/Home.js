@@ -13,8 +13,8 @@ import { FaPhoneSquare, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import Baner from "../../components/Baner/Baner";
 import "./Home.css";
-import VuitCredInfo from "../../components/Conteudo/VuitCredInfo/VuitCredInfo";
-import VuitBeneficiosInfo from "../../components/Conteudo/VuitBeneficiosInfo/VuitBeneficiosInfo ";
+import VuitCredInfo from "../../components/Conteudo/Home/VuitCredInfo/VuitCredInfo";
+import VuitBeneficiosInfo from "../../components/Conteudo/Home/VuitBeneficiosInfo/VuitBeneficiosInfo ";
 
 const Home = () => {
   return (

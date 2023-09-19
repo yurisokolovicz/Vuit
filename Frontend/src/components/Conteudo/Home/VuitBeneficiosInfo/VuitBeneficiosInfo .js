@@ -16,7 +16,7 @@ const VuitBeneficiosInfo = () => {
   return (
     <div className="conteudo-beneficios-container">
       <p>Conheça as vantagens das empresas que utilizam Vuit Benefícios:</p>
-      <ul>
+      <ul className="lista-com-hifens">
         {advantages.map((advantage, index) => (
           <li key={index}>{advantage}</li>
         ))}

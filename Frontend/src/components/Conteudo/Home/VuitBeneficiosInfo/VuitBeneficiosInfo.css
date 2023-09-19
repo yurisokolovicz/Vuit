@@ -2,3 +2,12 @@
   width: 650px;
   text-align: left;
 }
+
+.lista-com-hifens {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.lista-com-hifens li::before {
+  content: "- ";
+}
