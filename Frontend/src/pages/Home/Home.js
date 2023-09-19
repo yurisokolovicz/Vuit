@@ -8,6 +8,9 @@ import BotaoTelefone from "../../components/Botoes/BotaoTelefone/BotaoTelefone";
 import Separacao from "../../components/Separacao/Separacao";
 import BotaoBaixePdf from "../../components/Botoes/BotaoBaixePdf/BotaoBaixePdf";
 import BotaoProposta from "../../components/Botoes/BotaoProposta/BotaoProposta";
+import { MdEmail } from "react-icons/md";
+import { FaPhoneSquare, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { BsInstagram, BsYoutube } from "react-icons/bs";
 import "./Home.css";
 
 const Home = () => {
@@ -16,7 +19,16 @@ const Home = () => {
       <div className="container-home">
         <img src={vuitImage} alt="Background" />
         <p>SUA EMPRESA MUITO MAIS SEGURA</p>
-        <p>Icones redes sociais</p>
+
+        <div className="home-icons-container">
+          <MdEmail className="MdEmail" />
+          <FaPhoneSquare className="FaPhoneSquare" />
+          <FaFacebook className="FaFacebook" />
+          <BsInstagram className="BsInstagram" />
+          <BsYoutube className="BsYoutube" />
+          <FaLinkedin className="FaLinkedin" />
+        </div>
+
         <IntroHome />
         <BotaoBaixePdf />
         <Separacao />

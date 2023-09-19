@@ -15,3 +15,32 @@
   justify-content: center;
   width: 40%;
 }
+
+.home-icons-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-icons-container svg {
+  margin-right: 30px;
+  scale: 1.2;
+}
+
+.home-icons-container svg:last-child {
+  margin-right: 0;
+}
+
+.MdEmail {
+  scale: 1.4 !important;
+}
+
+.BsInstagram {
+  scale: 1.1 !important;
+}
+
+.BsYoutube {
+  scale: 1.4 !important;
+}
