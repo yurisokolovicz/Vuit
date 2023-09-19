@@ -1,5 +1,8 @@
 .botao-telefone button {
   margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #4eabe1;
   color: #ffffff;
   font-size: 1.1rem;
@@ -12,4 +15,13 @@
   cursor: pointer;
   width: 700px !important;
   height: 60px !important;
+  transition: transform 0.3s ease;
+}
+
+.botao-telefone button:hover {
+  transform: scale(1.025);
+}
+
+.botao-telefone button svg {
+  margin-right: 10px;
 }

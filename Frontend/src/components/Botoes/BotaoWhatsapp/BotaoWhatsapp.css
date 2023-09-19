@@ -1,4 +1,8 @@
 .botao-whatsapp button {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #1b8b1d;
   color: #ffffff;
   font-size: 1.1rem;
@@ -11,4 +15,13 @@
   cursor: pointer;
   width: 700px !important;
   height: 60px !important;
+  transition: transform 0.3s ease;
+}
+
+.botao-whatsapp button:hover {
+  transform: scale(1.025);
+}
+
+.botao-whatsapp button svg {
+  margin-right: 10px;
 }

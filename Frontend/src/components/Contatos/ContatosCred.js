@@ -7,7 +7,7 @@ const ContatosCred = () => {
   return (
     <div className="contato-cred-container">
       <div className="contato-cred-text-container">
-        <h3>CONTATOS</h3>
+        <h3>FALE CONOSCO</h3>
         <h4>VAMOS CONVERSAR?</h4>
       </div>
       <p>

@@ -4,8 +4,9 @@ import vuitImage from "../../../src/img/Homepage/block_images/vuit-img.png";
 import IntroHome from "../../components/Intro/IntroHome";
 import ContatosHome from "../../components/Contatos/ContatosHome";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
-import "./Home.css";
 import BotaoTelefone from "../../components/Botoes/BotaoWhatsapp/BotaoTelefone";
+import Separacao from "../../components/Separacao/Separacao";
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -16,15 +17,17 @@ const Home = () => {
         <p>Icones redes sociais</p>
         <IntroHome />
         <button>Baixe PDF apresentação Tudo na Vuit!</button>
-        <p> (Criar) componente de separacao _______ ^ ______</p>
-        <p> Add Vuit Beneficios</p>
-        <p> (Criar) componente de separacao _______ ^ ______</p>
-        <p> Add Vuit Cred</p>
-        <p> (Criar) componente de separacao _______ ^ ______</p>
+        <Separacao />
+        <p>Add Vuit Seguros</p>
+        <Separacao />
+        <p>Add Vuit Beneficios</p>
+        <Separacao />
+        <p>Add Vuit Cred</p>
+        <Separacao />
         <ContatosHome />
         <BotaoWhatsapp />
         <BotaoTelefone />
-        <p> (Criar) componente de separacao _______ ^ ______</p>
+        <Separacao />
       </div>
     </div>
   );
