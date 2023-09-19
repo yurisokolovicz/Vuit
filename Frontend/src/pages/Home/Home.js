@@ -12,11 +12,21 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneSquare, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import Baner from "../../components/Baner/Baner";
-import "./Home.css";
 import VuitCredInfo from "../../components/Conteudo/Home/VuitCredInfo/VuitCredInfo";
-import VuitBeneficiosInfo from "../../components/Conteudo/Home/VuitBeneficiosInfo/VuitBeneficiosInfo ";
+import ListaReutilizavel from "../../components/Conteudo/ListaReutilizavel/ListaReutilizavel";
+import "./Home.css";
 
 const Home = () => {
+  const listaDoBackEnd1 = [
+    "A Sodexo possui vasta rede credenciada em todo o território nacional;",
+    "Redução do tempo de recrutamento;",
+    "Redução com absenteísmos;",
+    "Redução da folha de pagamento;",
+    "Implantação diferenciada aos clientes;",
+    "Praticidade na gestão dos benefícios e relatórios;",
+    "Possibilidade de negociação diferenciada.",
+  ];
+
   return (
     <div id="home">
       <div className="container-home">
@@ -42,7 +52,10 @@ const Home = () => {
         <Baner
           src={require("../../img/Homepage/block_images/vuit-beneficios.png")}
         />
-        <VuitBeneficiosInfo />
+        <ListaReutilizavel
+          listaDoBackEnd={listaDoBackEnd1}
+          titulo="Conheça as vantagens das empresas que utilizam Vuit Benefícios:"
+        />
         <BotaoProposta texto="Solicite uma proposta Vuit Benefícios" />
         <Separacao />
         <Baner src={require("../../img/Homepage/block_images/vuit-cred.png")} />

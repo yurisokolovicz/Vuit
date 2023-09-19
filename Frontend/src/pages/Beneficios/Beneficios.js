@@ -12,8 +12,28 @@ import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import Baner from "../../components/Baner/Baner";
 import "./Beneficios.css";
+import ListaReutilizavel from "../../components/Conteudo/ListaReutilizavel/ListaReutilizavel";
 
 const Beneficios = () => {
+  const listaDoBackEnd1 = [
+    "IMPLANTAÇÃO DIFERENCIADA AOS CLIENTES",
+    "PRATICIDADE NA GESTAO DOS BENEFÍCIOS E RELATÓRIOS",
+    "POSSIBILIDADE DE NEGOCIAÇÃO FINANCEIRA",
+    "A SODEXO POSSUI VASTA REDE CREDENCIADA EM TODO TERRITÓRIO NACIONAL",
+    "REDUÇÃO DA FOLHA DE PAGAMENTO",
+    "REDUÇÃO DO TEMPO DE RECRUTAMENTO",
+    "REDUÇÃO COM ABSENTEÍSMOS",
+  ];
+
+  const listaDoBackEnd2 = [
+    "SEGUROS DE VIDA EM GRUPO",
+    "ACIDENTES PESSOAIS",
+    "SEGURO GARANTIA E GARANTIA JUDICIAL",
+    "RESPONSABILIDADE CIVIL E PRESTAÇÃO DE SERVIÇOS",
+    "SEGURO DE SAUDE, DENTAL E TELEMEDICINA",
+    "CRÉDITO CONSIGNADO (VUIT CRED)",
+  ];
+
   return (
     <div id="beneficios">
       <div className="container-beneficios">
@@ -34,7 +54,7 @@ const Beneficios = () => {
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-escolha.png")} />
-        <p>Por que escolher a Vuit</p>
+        <ListaReutilizavel listaDoBackEnd={listaDoBackEnd1} />
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-nacional.png")} />
@@ -44,7 +64,7 @@ const Beneficios = () => {
         <Baner
           src={require("../../img/beneficios/block_images/vuit-outros-servicos.png")}
         />
-        <p>Outros Servicos</p>
+        <ListaReutilizavel listaDoBackEnd={listaDoBackEnd2} />
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
         <ContatosBeneficios />

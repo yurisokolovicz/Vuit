@@ -11,9 +11,17 @@ import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import Baner from "../../components/Baner/Baner";
+import ListaReutilizavel from "../../components/Conteudo/ListaReutilizavel/ListaReutilizavel";
 import "./Cred.css";
 
 const Cred = () => {
+  const listaDoBackEnd1 = [
+    "APOIO EM EVENTOS E CAMPANHAS DA EMPRESA OU INSTITUIÇÃO",
+    "AÇÕES COMERCIAIS PARA COLABORADORES E PARCEIROS",
+    "REBATE DE ATÉ 2% PARA A EMPRESA SOBRE A PRODUÇÃO MENSAL PAGA",
+    "CURSO DE EDUCAÇÃO FINANCEIRA, DIGITAL, GRATUITO E COM CERTIFICADO PARA TODOS OS COLABORADORES",
+  ];
+
   return (
     <div id="cred">
       <div className="container-cred">
@@ -41,7 +49,7 @@ const Cred = () => {
         <Baner src={require("../../img/cred/block_images/vuit-parceria.png")} />
         <Separacao />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
-        <p>Listar itens</p>
+        <ListaReutilizavel listaDoBackEnd={listaDoBackEnd1} />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />
         <ContatosCred />

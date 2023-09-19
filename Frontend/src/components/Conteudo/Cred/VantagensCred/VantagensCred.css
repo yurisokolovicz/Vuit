@@ -1,0 +1,14 @@
+.vantagens-cred-container {
+  width: 650px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.vantagens-cred-container .lista-com-hifens {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.vantagens-cred-container .lista-com-hifens li::before {
+  content: "- ";
+}

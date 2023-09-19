@@ -3,11 +3,11 @@
   text-align: left;
 }
 
-.lista-com-hifens {
+.conteudo-beneficios-container .lista-com-hifens {
   list-style: none;
   padding-left: 0px;
 }
 
-.lista-com-hifens li::before {
+.conteudo-beneficios-container .lista-com-hifens li::before {
   content: "- ";
 }

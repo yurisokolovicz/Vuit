@@ -25,6 +25,11 @@
   align-items: center;
 }
 
+/* .p-reutilizavel-1 {
+  margin-bottom: -10px;
+  margin-left: -170px;
+} */
+
 .home-icons-container svg {
   margin-right: 30px;
   scale: 1.2;

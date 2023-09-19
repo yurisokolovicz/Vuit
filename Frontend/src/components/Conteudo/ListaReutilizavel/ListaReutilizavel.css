@@ -1,0 +1,18 @@
+.lista-reutilizavel-container {
+  width: 650px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.lista-reutilizavel-container .lista-com-hifens {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.lista-reutilizavel-container .lista-com-hifens li {
+  margin: 5px 0;
+}
+
+.lista-reutilizavel-container .lista-com-hifens li::before {
+  content: "- ";
+}
