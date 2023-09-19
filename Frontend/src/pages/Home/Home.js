@@ -11,8 +11,8 @@ import BotaoProposta from "../../components/Botoes/BotaoProposta/BotaoProposta";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneSquare, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
-import "./Home.css";
 import Baner from "../../components/Baner/Baner";
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -31,13 +31,19 @@ const Home = () => {
         <IntroHome />
         <BotaoBaixePdf />
         <Separacao />
-        <Baner />
+        <Baner
+          src={require("../../img/Homepage/block_images/vuit-seguros.png")}
+        />
         <p>Add Vuit Seguros</p>
         <BotaoProposta texto="Solicite uma proposta Vuit Seguros" />
         <Separacao />
+        <Baner
+          src={require("../../img/Homepage/block_images/vuit-beneficios.png")}
+        />
         <p>Add Vuit Beneficios</p>
         <BotaoProposta texto="Solicite uma proposta Vuit Benefícios" />
         <Separacao />
+        <Baner src={require("../../img/Homepage/block_images/vuit-cred.png")} />
         <p>Add Vuit Cred</p>
         <BotaoProposta texto="Solicite uma proposta Vuit Cred" />
         <Separacao />
