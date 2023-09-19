@@ -1,7 +1,7 @@
 import React from "react";
 
 import credImage from "../../../src/img/cred/block_images/vuit-img.png";
-import IntroBeneficios from "../../components/Intro/IntroBeneficios";
+import IntroBeneficios from "../../components/Intro/IntroBeneficios/IntroBeneficios";
 import ContatosBeneficios from "../../components/Contatos/ContatosBeneficios";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import BotaoTelefone from "../../components/Botoes/BotaoTelefone/BotaoTelefone";

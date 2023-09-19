@@ -1,15 +1,16 @@
 import React from "react";
 
-import Youtube from "../Youtube/Youtube";
-import "./IntroCred.css";
+import Youtube from "../../Youtube/Youtube";
+import "./IntroHome.css";
 
-const IntroCred = () => {
+const IntroHome = () => {
   return (
     <div className="video-container">
       <h3>O QUE É O GRUPO VUIT</h3>
+      <h4>O GRUPO VUIT</h4>
       <Youtube
-        src="https://www.youtube.com/embed/kdPSpUR9BLY?si=w3qNc5oU6pqDucBm"
-        title="Vuit Cred"
+        src="https://www.youtube.com/embed/44gxvIpnsM8?si=GnTj1kyrHwNrVWPm"
+        title="O Grupo Vuit"
       />
       <p>
         Vuit surge da necessidade de expansão de uma grande operação já
@@ -25,4 +26,4 @@ const IntroCred = () => {
   );
 };
 
-export default IntroCred;
+export default IntroHome;
