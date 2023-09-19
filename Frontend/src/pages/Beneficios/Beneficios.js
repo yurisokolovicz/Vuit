@@ -50,7 +50,10 @@ const Beneficios = () => {
         <Baner
           src={require("../../img/Homepage/block_images/vuit-beneficios.png")}
         />
-        <p>Add Vuit Beneficios</p>
+        <ListaReutilizavel
+          listaDoBackEnd={[]}
+          titulo="A Vuit Benefícios é uma empresa do Grupo Vuit responsável pela implantação de benefícios para milhares de colaboradores de empresas de todo país."
+        />
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-escolha.png")} />
