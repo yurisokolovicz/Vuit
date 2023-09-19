@@ -13,6 +13,8 @@ import { FaPhoneSquare, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import Baner from "../../components/Baner/Baner";
 import "./Home.css";
+import VuitCredInfo from "../../components/Conteudo/VuitCredInfo/VuitCredInfo";
+import VuitBeneficiosInfo from "../../components/Conteudo/VuitBeneficiosInfo/VuitBeneficiosInfo ";
 
 const Home = () => {
   return (
@@ -34,17 +36,17 @@ const Home = () => {
         <Baner
           src={require("../../img/Homepage/block_images/vuit-seguros.png")}
         />
-        <p>Add Vuit Seguros</p>
+        <p>Add componente expandivel</p>
         <BotaoProposta texto="Solicite uma proposta Vuit Seguros" />
         <Separacao />
         <Baner
           src={require("../../img/Homepage/block_images/vuit-beneficios.png")}
         />
-        <p>Add Vuit Beneficios</p>
+        <VuitBeneficiosInfo />
         <BotaoProposta texto="Solicite uma proposta Vuit Benefícios" />
         <Separacao />
         <Baner src={require("../../img/Homepage/block_images/vuit-cred.png")} />
-        <p>Add Vuit Cred</p>
+        <VuitCredInfo />
         <BotaoProposta texto="Solicite uma proposta Vuit Cred" />
         <Separacao />
         <ContatosHome />
