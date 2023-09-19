@@ -2,7 +2,7 @@ import React from "react";
 
 import vuitImage from "../../../src/img/Homepage/block_images/vuit-img.png";
 import IntroHome from "../../components/Intro/IntroHome/IntroHome";
-import ContatosHome from "../../components/Contatos/ContatosHome";
+import ContatosHome from "../../components/Contatos/ContatosHome/ContatosHome";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import BotaoTelefone from "../../components/Botoes/BotaoTelefone/BotaoTelefone";
 import Separacao from "../../components/Separacao/Separacao";

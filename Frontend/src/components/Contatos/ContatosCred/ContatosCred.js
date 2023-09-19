@@ -1,6 +1,6 @@
 import React from "react";
 
-import Instagram from "../Instagram/Instagram";
+import Instagram from "../../Instagram/Instagram";
 import "./ContatosCred.css";
 
 const ContatosCred = () => {
