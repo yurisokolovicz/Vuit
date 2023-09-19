@@ -1,19 +1,23 @@
 .contato-cred-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.contato-cred-text-container h3 {
-  align-self: start;
-  align-items: left;
+.contato-cred-text-container h3,
+.contato-cred-text-container h4 {
+  text-align: left;
 }
 
 .contato-cred-text-container h4 {
   color: #f0c674;
-  align-self: start;
-  align-items: left;
+}
+
+.contato-cred-container .instagram-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .contato-cred-container .instagram-media {

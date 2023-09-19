@@ -14,7 +14,9 @@ const ContatosCred = () => {
         Venha fazer parte deste ecossistema que tem mudado a vida das pessoas.
         Será um prazer tê-los conosco.
       </p>
-      <Instagram link="https://www.instagram.com/vuitcred/" />
+      <div className="instagram-center">
+        <Instagram link="https://www.instagram.com/vuitcred/" />
+      </div>
     </div>
   );
 };
