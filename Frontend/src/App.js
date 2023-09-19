@@ -5,7 +5,8 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Cred from "./pages/Cred/Cred";
 import Beneficios from "./pages/Beneficios/Beneficios";
-import GoogleMapsApi from "./components/GoogleMapsApi/GoogleMapsApi";
+import Localizacao from "./components/Localizacao/Localizacao";
+// import GoogleMapsApi from "./components/GoogleMapsApi/GoogleMapsApi";
 
 import "./App.css";
 
@@ -18,9 +19,10 @@ function App() {
         <Route path="/cred" element={<Cred />} />
         <Route path="/beneficios" element={<Beneficios />} />
       </Routes>
-      <div className="container-map">
+      <Localizacao />
+      {/* <div className="container-map">
         <GoogleMapsApi />
-      </div>
+      </div> */}
       <Footer />
     </BrowserRouter>
   );
