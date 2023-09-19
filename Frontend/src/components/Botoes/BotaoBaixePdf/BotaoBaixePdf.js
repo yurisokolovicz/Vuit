@@ -1,13 +1,13 @@
 import React from "react";
 
-import { FaPhoneFlip } from "react-icons/fa6";
+import PdfSvg from "../../CustomSvg/PdfSvg";
 import "./BotaoBaixePdf.css";
 
 function BotaoBaixePdf() {
   return (
     <div className="botao-baixepdf">
       <button>
-        <FaPhoneFlip /> Baixe PDF apresentação Tudo na Vuit!
+        <PdfSvg width="24" height="24" /> Baixe PDF apresentação Tudo na Vuit!
       </button>
     </div>
   );

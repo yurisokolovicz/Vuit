@@ -6,7 +6,6 @@ import Home from "./pages/Home/Home";
 import Cred from "./pages/Cred/Cred";
 import Beneficios from "./pages/Beneficios/Beneficios";
 import Localizacao from "./components/Localizacao/Localizacao";
-// import GoogleMapsApi from "./components/GoogleMapsApi/GoogleMapsApi";
 
 import "./App.css";
 
@@ -20,9 +19,6 @@ function App() {
         <Route path="/beneficios" element={<Beneficios />} />
       </Routes>
       <Localizacao />
-      {/* <div className="container-map">
-        <GoogleMapsApi />
-      </div> */}
       <Footer />
     </BrowserRouter>
   );
