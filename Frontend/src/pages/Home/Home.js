@@ -17,6 +17,10 @@ import ParagReutilizavel from "../../components/Conteudo/ParagReutilizavel/Parag
 import "./Home.css";
 
 const Home = () => {
+  const tituloDoBackEnd1 = [
+    "Conheça as vantagens das empresas que utilizam Vuit Benefícios:",
+  ];
+
   const listaDoBackEnd1 = [
     "A Sodexo possui vasta rede credenciada em todo o território nacional;",
     "Redução do tempo de recrutamento;",
@@ -65,7 +69,7 @@ const Home = () => {
         />
         <ListaReutilizavel
           listaDoBackEnd={listaDoBackEnd1}
-          titulo="Conheça as vantagens das empresas que utilizam Vuit Benefícios:"
+          titulo={tituloDoBackEnd1}
         />
         <BotaoProposta texto="Solicite uma proposta Vuit Benefícios" />
         <Separacao />
