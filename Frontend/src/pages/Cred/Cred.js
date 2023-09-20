@@ -16,6 +16,19 @@ import ParagListReutilizavel from "../../components/Conteudo/ParagListReutilizav
 import "./Cred.css";
 
 const Cred = () => {
+  ///////// Intro /////////
+  const textoIntroParagrafo1 = `
+    Vuit surge da necessidade de expansão de uma grande operação já
+    existente, orientada para a customização da gestão de seguros de vida,
+    saúde, crédito consignado e benefícios às empresas e empregados.
+  `;
+
+  const textoIntroParagrafo2 = `
+    Focada na consultoria de seguros e benefícios, a Vuit quebra
+    paradigmas no mercado atuando de forma disruptiva com conceitos
+    colaborativos que promovem todo o ecossistema envolvido.
+  `;
+
   ///////// ParagListReutilizavel /////////
   const tituloDoBackEndParagList1 = [
     "A Vuit Cred é uma empresa do Grupo Vuit e é responsável pela gestão de mais de 150 mil pessoas e mais de 1.500 empresas assistidas por seus produtos e benefícios.",
@@ -71,6 +84,8 @@ const Cred = () => {
           showP={true}
           youtubeSrc="https://www.youtube.com/embed/kdPSpUR9BLY?si=w3qNc5oU6pqDucBm"
           youtubeTitle="Vuit Cred"
+          paragrafo1={textoIntroParagrafo1}
+          paragrafo2={textoIntroParagrafo2}
         />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-cred.png")} />

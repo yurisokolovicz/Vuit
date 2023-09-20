@@ -18,6 +18,19 @@ import RetanguloExpansivo from "../../components/RetanguloExpansivo/RetanguloExp
 import "./Home.css";
 
 const Home = () => {
+  ///////// Intro /////////
+  const textoIntroParagrafo1 = `
+    Vuit surge da necessidade de expansão de uma grande operação já
+    existente, orientada para a customização da gestão de seguros de vida,
+    saúde, crédito consignado e benefícios às empresas e empregados.
+  `;
+
+  const textoIntroParagrafo2 = `
+    Focada na consultoria de seguros e benefícios, a Vuit quebra
+    paradigmas no mercado atuando de forma disruptiva com conceitos
+    colaborativos que promovem todo o ecossistema envolvido.
+  `;
+
   ///////// RetanguloExpansivo /////////
   const tituloBloco1 = ["Seguro de vida em grupo e acidentes pessoais"];
 
@@ -104,6 +117,8 @@ const Home = () => {
           showP={true}
           youtubeSrc="https://www.youtube.com/embed/44gxvIpnsM8?si=GnTj1kyrHwNrVWPm"
           youtubeTitle="O Grupo Vuit"
+          paragrafo1={textoIntroParagrafo1}
+          paragrafo2={textoIntroParagrafo2}
         />
         <BotaoBaixePdf />
         <Separacao />

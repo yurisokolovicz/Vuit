@@ -16,6 +16,19 @@ import ParagListReutilizavel from "../../components/Conteudo/ParagListReutilizav
 import "./Beneficios.css";
 
 const Beneficios = () => {
+  ///////// Intro /////////
+  const textoIntroParagrafo1 = `
+    Vuit surge da necessidade de expansão de uma grande operação já
+    existente, orientada para a customização da gestão de seguros de vida,
+    saúde, crédito consignado e benefícios às empresas e empregados.
+  `;
+
+  const textoIntroParagrafo2 = `
+    Focada na consultoria de seguros e benefícios, a Vuit quebra
+    paradigmas no mercado atuando de forma disruptiva com conceitos
+    colaborativos que promovem todo o ecossistema envolvido.
+  `;
+
   ///////// ParagListReutilizavel /////////
   const tituloDoBackEndParagList1 = [
     "A Vuit Benefícios é uma empresa do Grupo Vuit responsável pela implantação de benefícios para milhares de colaboradores de empresas de todo país.",
@@ -76,6 +89,8 @@ const Beneficios = () => {
           showH4={true}
           showYoutube={false}
           showP={true}
+          paragrafo1={textoIntroParagrafo1}
+          paragrafo2={textoIntroParagrafo2}
         />
         <Separacao />
         <Baner
