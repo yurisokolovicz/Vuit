@@ -16,16 +16,28 @@ import "./Cred.css";
 import ParagListReutilizavel from "../../components/Conteudo/ParagListReutilizavel/ParagListReutilizavel";
 
 const Cred = () => {
-  const listaDoBackEnd4 = ["Custos reduzidos", "Processos personalizados"];
+  const listaDoBackEnd1 = ["Mais de 150 mil pessoas", "Mais de 1500 empresas"];
 
-  const listaDoBackEnd3 = [
+  const tituloDoBackEnd1 = [
+    "A Vuit Cred é uma empresa do Grupo Vuit e é responsável pela gestão de mais de 150 mil pessoas e mais de 1.500 empresas assistidas por seus produtos e benefícios.",
+  ];
+
+  const listaDoBackEnd2 = [
     "Menor taxa de juros",
     "Educação financeira de qualidade sem burocracia",
   ];
 
-  const listaDoBackEnd2 = ["Mais de 150 mil pessoas", "Mais de 1500 empresas"];
+  const tituloDoBackEnd2 = [
+    "Contratando o crédito consignado com a Vuit Cred é possível ajudar os seus colaboradores a terem crédito de forma ágil e simples, sem burocracia, sendo um facilitador ao RH da empresa.",
+  ];
 
-  const listaDoBackEnd1 = [
+  const listaDoBackEnd3 = ["Custos reduzidos", "Processos personalizados"];
+
+  const tituloDoBackEnd3 = [
+    "Devido à capilaridade de clientes distribuídos em todos os estados brasileiros, é possível conquistar reduções nas taxas, nos custos e personalizar processos.",
+  ];
+
+  const listaDoBackEnd4 = [
     "APOIO EM EVENTOS E CAMPANHAS DA EMPRESA OU INSTITUIÇÃO",
     "AÇÕES COMERCIAIS PARA COLABORADORES E PARCEIROS",
     "REBATE DE ATÉ 2% PARA A EMPRESA SOBRE A PRODUÇÃO MENSAL PAGA",
@@ -47,27 +59,27 @@ const Cred = () => {
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-cred.png")} />
         <ParagListReutilizavel
-          listaDoBackEnd={listaDoBackEnd2}
-          titulo="A Vuit Cred é uma empresa do Grupo Vuit e é responsável pela gestão de mais de 150 mil pessoas e mais de 1.500 empresas assistidas por seus produtos e benefícios."
+          listaDoBackEnd={listaDoBackEnd1}
+          titulo={tituloDoBackEnd1}
         />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-escolha.png")} />
         <ParagListReutilizavel
-          listaDoBackEnd={listaDoBackEnd3}
-          titulo="Contratando o crédito consignado com a Vuit Cred é possível ajudar os seus colaboradores a terem crédito de forma ágil e simples, sem burocracia, sendo um facilitador ao RH da empresa."
+          listaDoBackEnd={listaDoBackEnd2}
+          titulo={tituloDoBackEnd2}
         />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-nacional.png")} />
         <ParagListReutilizavel
-          listaDoBackEnd={listaDoBackEnd4}
-          titulo="Devido à capilaridade de clientes distribuídos em todos os estados brasileiros, é possível conquistar reduções nas taxas, nos custos e personalizar processos."
+          listaDoBackEnd={listaDoBackEnd3}
+          titulo={tituloDoBackEnd3}
         />
         <Baner src={require("../../img/cred/block_images/vuit-parceria.png")} />
         <Separacao />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
-        <ListaReutilizavel listaDoBackEnd={listaDoBackEnd1} />
+        <ListaReutilizavel listaDoBackEnd={listaDoBackEnd4} />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />
         <ContatosCred />
