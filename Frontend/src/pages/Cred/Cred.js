@@ -13,8 +13,18 @@ import { BsInstagram } from "react-icons/bs";
 import Baner from "../../components/Baner/Baner";
 import ListaReutilizavel from "../../components/Conteudo/ListaReutilizavel/ListaReutilizavel";
 import "./Cred.css";
+import ParagListReutilizavel from "../../components/Conteudo/ParagListReutilizavel/ParagListReutilizavel";
 
 const Cred = () => {
+  const listaDoBackEnd4 = ["Custos reduzidos", "Processos personalizados"];
+
+  const listaDoBackEnd3 = [
+    "Menor taxa de juros",
+    "Educação financeira de qualidade sem burocracia",
+  ];
+
+  const listaDoBackEnd2 = ["Mais de 150 mil pessoas", "Mais de 1500 empresas"];
+
   const listaDoBackEnd1 = [
     "APOIO EM EVENTOS E CAMPANHAS DA EMPRESA OU INSTITUIÇÃO",
     "AÇÕES COMERCIAIS PARA COLABORADORES E PARCEIROS",
@@ -36,16 +46,24 @@ const Cred = () => {
         <IntroCred />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-cred.png")} />
-        <p>Add Vuit Cred</p>
+        <ParagListReutilizavel
+          listaDoBackEnd={listaDoBackEnd2}
+          titulo="A Vuit Cred é uma empresa do Grupo Vuit e é responsável pela gestão de mais de 150 mil pessoas e mais de 1.500 empresas assistidas por seus produtos e benefícios."
+        />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-escolha.png")} />
-        <p>Por que escolher a Vuit</p>
+        <ParagListReutilizavel
+          listaDoBackEnd={listaDoBackEnd3}
+          titulo="Contratando o crédito consignado com a Vuit Cred é possível ajudar os seus colaboradores a terem crédito de forma ágil e simples, sem burocracia, sendo um facilitador ao RH da empresa."
+        />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-nacional.png")} />
-        <p>Atuacao Nacional</p>
-        <p>Parceria Comercial</p>
+        <ParagListReutilizavel
+          listaDoBackEnd={listaDoBackEnd4}
+          titulo="Devido à capilaridade de clientes distribuídos em todos os estados brasileiros, é possível conquistar reduções nas taxas, nos custos e personalizar processos."
+        />
         <Baner src={require("../../img/cred/block_images/vuit-parceria.png")} />
         <Separacao />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
