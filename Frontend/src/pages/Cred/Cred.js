@@ -91,6 +91,7 @@ const Cred = () => {
         <ListaReutilizavel
           titulo={tituloDoBackEndListReut1}
           listaDoBackEnd={listaDoBackEndListReut1}
+          uppercase={true}
         />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />

@@ -82,6 +82,7 @@ const Beneficios = () => {
         <ListaReutilizavel
           titulo={tituloDoBackEndListReut1}
           listaDoBackEnd={listaDoBackEndListReut1}
+          uppercase={true}
         />
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
@@ -98,6 +99,7 @@ const Beneficios = () => {
         <ListaReutilizavel
           titulo={tituloDoBackEndListReut2}
           listaDoBackEnd={listaDoBackEndListReut2}
+          uppercase={true}
         />
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
