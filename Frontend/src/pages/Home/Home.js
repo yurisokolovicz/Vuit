@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneSquare, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import vuitImage from "../../../src/img/Homepage/block_images/vuit-img.png";
-import IntroHome from "../../components/Intro/IntroHome/IntroHome";
+import IntroReutilizavel from "../../components/Intro/IntroReutilizavel/IntroReutilizavel";
 import ContatosHome from "../../components/Contatos/ContatosHome/ContatosHome";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import BotaoTelefone from "../../components/Botoes/BotaoTelefone/BotaoTelefone";
@@ -55,7 +55,14 @@ const Home = () => {
           <BsYoutube className="BsYoutube" />
           <FaLinkedin className="FaLinkedin" />
         </div>
-        <IntroHome />
+        <IntroReutilizavel
+          showH3={true}
+          showH4={true}
+          showYoutube={true}
+          showP={true}
+          youtubeSrc="https://www.youtube.com/embed/44gxvIpnsM8?si=GnTj1kyrHwNrVWPm"
+          youtubeTitle="O Grupo Vuit"
+        />
         <BotaoBaixePdf />
         <Separacao />
         <Baner
