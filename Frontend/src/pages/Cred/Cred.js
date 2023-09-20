@@ -16,7 +16,7 @@ import ParagListReutilizavel from "../../components/Conteudo/ParagListReutilizav
 import "./Cred.css";
 
 const Cred = () => {
-  // ParagListReutilizavel data from the backend
+  ///////// ParagListReutilizavel /////////
   const tituloDoBackEndParagList1 = [
     "A Vuit Cred é uma empresa do Grupo Vuit e é responsável pela gestão de mais de 150 mil pessoas e mais de 1.500 empresas assistidas por seus produtos e benefícios.",
   ];
@@ -43,7 +43,7 @@ const Cred = () => {
     "Processos personalizados",
   ];
 
-  // ListaReutilizavel data from the backend
+  ///////// ListaReutilizavel /////////
   const tituloDoBackEndListReut1 = [];
 
   const listaDoBackEndListReut1 = [
@@ -76,28 +76,28 @@ const Cred = () => {
         <Baner src={require("../../img/cred/block_images/vuit-cred.png")} />
         <ParagListReutilizavel
           titulo={tituloDoBackEndParagList1}
-          listaDoBackEnd={listaDoBackEndParagList1}
+          conteudo={listaDoBackEndParagList1}
         />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-escolha.png")} />
         <ParagListReutilizavel
           titulo={tituloDoBackEndParagList2}
-          listaDoBackEnd={listaDoBackEndParagList2}
+          conteudo={listaDoBackEndParagList2}
         />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-nacional.png")} />
         <ParagListReutilizavel
           titulo={tituloDoBackEndParagList3}
-          listaDoBackEnd={listaDoBackEndParagList3}
+          conteudo={listaDoBackEndParagList3}
         />
         <Baner src={require("../../img/cred/block_images/vuit-parceria.png")} />
         <Separacao />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <ListaReutilizavel
           titulo={tituloDoBackEndListReut1}
-          listaDoBackEnd={listaDoBackEndListReut1}
+          conteudo={listaDoBackEndListReut1}
           uppercase={true}
         />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />

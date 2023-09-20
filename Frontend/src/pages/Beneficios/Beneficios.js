@@ -16,7 +16,7 @@ import ParagListReutilizavel from "../../components/Conteudo/ParagListReutilizav
 import "./Beneficios.css";
 
 const Beneficios = () => {
-  // ParagListReutilizavel data from the backend
+  ///////// ParagListReutilizavel /////////
   const tituloDoBackEndParagList1 = [
     "A Vuit Benefícios é uma empresa do Grupo Vuit responsável pela implantação de benefícios para milhares de colaboradores de empresas de todo país.",
   ];
@@ -32,7 +32,7 @@ const Beneficios = () => {
     "Processos personalizados",
   ];
 
-  // ListaReutilizavel data from the backend
+  ///////// ListaReutilizavel /////////
   const tituloDoBackEndListReut1 = [];
 
   const listaDoBackEndListReut1 = [
@@ -83,14 +83,14 @@ const Beneficios = () => {
         />
         <ListaReutilizavel
           titulo={tituloDoBackEndParagList1}
-          listaDoBackEnd={listaDoBackEndParagList1}
+          conteudo={listaDoBackEndParagList1}
         />
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-escolha.png")} />
         <ListaReutilizavel
           titulo={tituloDoBackEndListReut1}
-          listaDoBackEnd={listaDoBackEndListReut1}
+          conteudo={listaDoBackEndListReut1}
           uppercase={true}
         />
         <BotaoProposta texto="Solicite uma proposta" />
@@ -98,7 +98,7 @@ const Beneficios = () => {
         <Baner src={require("../../img/cred/block_images/vuit-nacional.png")} />
         <ParagListReutilizavel
           titulo={tituloDoBackEndParagList2}
-          listaDoBackEnd={listaDoBackEndParagList2}
+          conteudo={listaDoBackEndParagList2}
         />
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
@@ -107,7 +107,7 @@ const Beneficios = () => {
         />
         <ListaReutilizavel
           titulo={tituloDoBackEndListReut2}
-          listaDoBackEnd={listaDoBackEndListReut2}
+          conteudo={listaDoBackEndListReut2}
           uppercase={true}
         />
         <BotaoProposta texto="Solicite uma proposta" />

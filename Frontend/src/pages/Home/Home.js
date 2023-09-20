@@ -127,8 +127,8 @@ const Home = () => {
           src={require("../../img/Homepage/block_images/vuit-beneficios.png")}
         />
         <ListaReutilizavel
-          listaDoBackEnd={listaDoBackEnd1}
           titulo={tituloDoBackEnd1}
+          conteudo={listaDoBackEnd1}
         />
         <BotaoProposta texto="Solicite uma proposta Vuit Benefícios" />
         <Separacao />
