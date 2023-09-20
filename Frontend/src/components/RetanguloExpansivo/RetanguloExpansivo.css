@@ -18,5 +18,10 @@
 
 .retangulo-container .not-expanded .icon {
   margin-right: 5px;
-  scale: 2;
+  scale: 2.5;
+}
+
+.retangulo-container .not-expanded .icon.rotate-icon {
+  margin-right: 5px;
+  transform: rotate(45deg);
 }

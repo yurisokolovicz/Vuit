@@ -12,7 +12,7 @@ function RetanguloExpansivo() {
 
   return (
     <div
-      className="retangulo-container"
+      className={`retangulo-container ${expanded ? "expanded" : ""}`}
       style={{
         fontSize: "1rem",
         fontWeight: "400",
@@ -30,7 +30,7 @@ function RetanguloExpansivo() {
     >
       <div className="not-expanded">
         <p>Seguro de vida em grupo e acidentes pessoais </p>
-        <GrFormAdd className="icon" />
+        <GrFormAdd className={`icon ${expanded ? "rotate-icon" : ""}`} />
       </div>
       {expanded && (
         <div className="expanded">
