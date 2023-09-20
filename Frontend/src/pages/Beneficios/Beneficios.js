@@ -1,5 +1,8 @@
 import React from "react";
 
+import { MdEmail } from "react-icons/md";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
 import credImage from "../../../src/img/cred/block_images/vuit-img.png";
 import IntroBeneficios from "../../components/Intro/IntroBeneficios/IntroBeneficios";
 import ContatosBeneficios from "../../components/Contatos/ContatosBeneficios/ContatosBeneficios";
@@ -7,13 +10,10 @@ import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import BotaoTelefone from "../../components/Botoes/BotaoTelefone/BotaoTelefone";
 import Separacao from "../../components/Separacao/Separacao";
 import BotaoProposta from "../../components/Botoes/BotaoProposta/BotaoProposta";
-import { MdEmail } from "react-icons/md";
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
 import Baner from "../../components/Baner/Baner";
-import "./Beneficios.css";
 import ListaReutilizavel from "../../components/Conteudo/ListaReutilizavel/ListaReutilizavel";
 import ParagListReutilizavel from "../../components/Conteudo/ParagListReutilizavel/ParagListReutilizavel";
+import "./Beneficios.css";
 
 const Beneficios = () => {
   // ParagListReutilizavel data from the backend

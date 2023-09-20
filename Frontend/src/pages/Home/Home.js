@@ -1,5 +1,8 @@
 import React from "react";
 
+import { MdEmail } from "react-icons/md";
+import { FaPhoneSquare, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { BsInstagram, BsYoutube } from "react-icons/bs";
 import vuitImage from "../../../src/img/Homepage/block_images/vuit-img.png";
 import IntroHome from "../../components/Intro/IntroHome/IntroHome";
 import ContatosHome from "../../components/Contatos/ContatosHome/ContatosHome";
@@ -8,9 +11,6 @@ import BotaoTelefone from "../../components/Botoes/BotaoTelefone/BotaoTelefone";
 import Separacao from "../../components/Separacao/Separacao";
 import BotaoBaixePdf from "../../components/Botoes/BotaoBaixePdf/BotaoBaixePdf";
 import BotaoProposta from "../../components/Botoes/BotaoProposta/BotaoProposta";
-import { MdEmail } from "react-icons/md";
-import { FaPhoneSquare, FaFacebook, FaLinkedin } from "react-icons/fa";
-import { BsInstagram, BsYoutube } from "react-icons/bs";
 import Baner from "../../components/Baner/Baner";
 import VuitCredInfo from "../../components/Conteudo/Home/VuitCredInfo/VuitCredInfo";
 import ListaReutilizavel from "../../components/Conteudo/ListaReutilizavel/ListaReutilizavel";
