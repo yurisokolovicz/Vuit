@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { GrFormAdd } from "react-icons/gr";
 import "./RetanguloExpansivo.css";
 
-function RetanguloExpansivo() {
+function RetanguloExpansivo({ titulo, conteudo }) {
   const [expanded, setExpanded] = useState(false);
 
   const toggleExpansion = () => {
@@ -29,16 +29,10 @@ function RetanguloExpansivo() {
       onClick={toggleExpansion}
     >
       <div className="not-expanded">
-        <p>Seguro de vida em grupo e acidentes pessoais </p>
+        <p>{titulo}</p>
         <GrFormAdd className={`icon ${expanded ? "rotate-icon" : ""}`} />
       </div>
-      {expanded && (
-        <div className="expanded">
-          A Vuit Seguros é uma corretora que assessora as empresas, fornecendo
-          seguro de vida em grupo e acidentes pessoais, permitindo que
-          economizem tempo, esforço e dinheiro.
-        </div>
-      )}
+      {expanded && <div className="expanded">{conteudo}</div>}
     </div>
   );
 }

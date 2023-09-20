@@ -16,6 +16,11 @@
   width: 40%;
 }
 
+.container-home .container-retangulos {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
 .home-icons-container {
   cursor: pointer;
   margin-top: 10px;
