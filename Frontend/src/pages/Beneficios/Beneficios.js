@@ -33,6 +33,8 @@ const Beneficios = () => {
   ];
 
   // ListaReutilizavel data from the backend
+  const tituloDoBackEndListReut1 = [];
+
   const listaDoBackEndListReut1 = [
     "Implantação diferenciada aos clientes",
     "Praticidade na gestão dos benefícios e relatórios",
@@ -42,6 +44,8 @@ const Beneficios = () => {
     "Redução do tempo de recrutamento",
     "Redução com absenteísmos",
   ];
+
+  const tituloDoBackEndListReut2 = [];
 
   const listaDoBackEndListReut2 = [
     "Seguros de vida em grupo",
@@ -75,7 +79,10 @@ const Beneficios = () => {
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-escolha.png")} />
-        <ListaReutilizavel listaDoBackEnd={listaDoBackEndListReut1} />
+        <ListaReutilizavel
+          titulo={tituloDoBackEndListReut1}
+          listaDoBackEnd={listaDoBackEndListReut1}
+        />
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-nacional.png")} />
@@ -88,7 +95,10 @@ const Beneficios = () => {
         <Baner
           src={require("../../img/beneficios/block_images/vuit-outros-servicos.png")}
         />
-        <ListaReutilizavel listaDoBackEnd={listaDoBackEndListReut2} />
+        <ListaReutilizavel
+          titulo={tituloDoBackEndListReut2}
+          listaDoBackEnd={listaDoBackEndListReut2}
+        />
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
         <ContatosBeneficios />

@@ -44,6 +44,8 @@ const Cred = () => {
   ];
 
   // ListaReutilizavel data from the backend
+  const tituloDoBackEndListReut1 = [];
+
   const listaDoBackEndListReut1 = [
     "Apoio em eventos e campanhas da empresa ou instituição",
     "Ações comerciais para colaboradores e parceiros",
@@ -66,27 +68,30 @@ const Cred = () => {
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-cred.png")} />
         <ParagListReutilizavel
-          listaDoBackEnd={listaDoBackEndParagList1}
           titulo={tituloDoBackEndParagList1}
+          listaDoBackEnd={listaDoBackEndParagList1}
         />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-escolha.png")} />
         <ParagListReutilizavel
-          listaDoBackEnd={listaDoBackEndParagList2}
           titulo={tituloDoBackEndParagList2}
+          listaDoBackEnd={listaDoBackEndParagList2}
         />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-nacional.png")} />
         <ParagListReutilizavel
-          listaDoBackEnd={listaDoBackEndParagList3}
           titulo={tituloDoBackEndParagList3}
+          listaDoBackEnd={listaDoBackEndParagList3}
         />
         <Baner src={require("../../img/cred/block_images/vuit-parceria.png")} />
         <Separacao />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
-        <ListaReutilizavel listaDoBackEnd={listaDoBackEndListReut1} />
+        <ListaReutilizavel
+          titulo={tituloDoBackEndListReut1}
+          listaDoBackEnd={listaDoBackEndListReut1}
+        />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />
         <ContatosCred />
