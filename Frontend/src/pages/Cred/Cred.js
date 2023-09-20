@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import credImage from "../../../src/img/cred/block_images/vuit-img.png";
-import IntroCred from "../../components/Intro/IntroCred/IntroCred";
+import IntroReutilizavel from "../../components/Intro/IntroReutilizavel/IntroReutilizavel";
 import ContatosCred from "../../components/Contatos/ContatosCred/ContatosCred";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import BotaoTelefone from "../../components/Botoes/BotaoTelefone/BotaoTelefone";
@@ -64,7 +64,14 @@ const Cred = () => {
           <BsInstagram className="BsInstagram" />
           <FaLinkedin className="FaLinkedin" />
         </div>
-        <IntroCred />
+        <IntroReutilizavel
+          showH3={true}
+          showH4={false}
+          showYoutube={true}
+          showP={true}
+          youtubeSrc="https://www.youtube.com/embed/kdPSpUR9BLY?si=w3qNc5oU6pqDucBm"
+          youtubeTitle="Vuit Cred"
+        />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-cred.png")} />
         <ParagListReutilizavel
