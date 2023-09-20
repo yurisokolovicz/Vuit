@@ -14,6 +14,7 @@ import BotaoProposta from "../../components/Botoes/BotaoProposta/BotaoProposta";
 import Baner from "../../components/Baner/Baner";
 import ListaReutilizavel from "../../components/Conteudo/ListaReutilizavel/ListaReutilizavel";
 import ParagReutilizavel from "../../components/Conteudo/ParagReutilizavel/ParagReutilizavel";
+import RetanguloExpansivo from "../../components/RetanguloExpansivo/RetanguloExpansivo";
 import "./Home.css";
 
 const Home = () => {
@@ -68,7 +69,7 @@ const Home = () => {
         <Baner
           src={require("../../img/Homepage/block_images/vuit-seguros.png")}
         />
-        <p>Add componente expandivel</p>
+        <RetanguloExpansivo />
         <BotaoProposta texto="Solicite uma proposta Vuit Seguros" />
         <Separacao />
         <Baner
