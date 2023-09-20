@@ -12,8 +12,8 @@ import Separacao from "../../components/Separacao/Separacao";
 import BotaoBaixePdf from "../../components/Botoes/BotaoBaixePdf/BotaoBaixePdf";
 import BotaoProposta from "../../components/Botoes/BotaoProposta/BotaoProposta";
 import Baner from "../../components/Baner/Baner";
-import VuitCredInfo from "../../components/Conteudo/Home/VuitCredInfo/VuitCredInfo";
 import ListaReutilizavel from "../../components/Conteudo/ListaReutilizavel/ListaReutilizavel";
+import ParagReutilizavel from "../../components/Conteudo/ParagReutilizavel/ParagReutilizavel";
 import "./Home.css";
 
 const Home = () => {
@@ -25,6 +25,17 @@ const Home = () => {
     "Implantação diferenciada aos clientes;",
     "Praticidade na gestão dos benefícios e relatórios;",
     "Possibilidade de negociação diferenciada.",
+  ];
+
+  const paragrafoHome = [
+    "A Vuit Cred é uma empresa do Grupo Vuit, que é responsável pela gestão de mais de 150 mil pessoas e mais de 1.500 empresas assistidas por seus produtos e benefícios.",
+    "Devido à capilaridade de clientes espalhados em todos os estados brasileiros, foi possível conquistar reduções nas taxas, nos custos e personalizar os processos.",
+    "Contratando o crédito consignado com a Vuit Cred é possível ajudar seus colaboradores a terem crédito ágil e simples, tudo com desburocratização, sendo um facilitador ao RH da empresa.",
+    "- MENOR TAXA DE JUROS",
+    "- EDUCAÇÃO FINANCEIRA E DE QUALIDADE",
+    "41 2101 1724",
+    "41 99267 2010",
+    "@VUITCRED",
   ];
 
   return (
@@ -59,7 +70,7 @@ const Home = () => {
         <BotaoProposta texto="Solicite uma proposta Vuit Benefícios" />
         <Separacao />
         <Baner src={require("../../img/Homepage/block_images/vuit-cred.png")} />
-        <VuitCredInfo />
+        <ParagReutilizavel paragrafoDoBackEnd={paragrafoHome} />
         <BotaoProposta texto="Solicite uma proposta Vuit Cred" />
         <Separacao />
         <ContatosHome />
