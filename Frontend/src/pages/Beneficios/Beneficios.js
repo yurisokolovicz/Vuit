@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import credImage from "../../../src/img/cred/block_images/vuit-img.png";
-import IntroBeneficios from "../../components/Intro/IntroBeneficios/IntroBeneficios";
+import IntroReutilizavel from "../../components/Intro/IntroReutilizavel/IntroReutilizavel";
 import ContatosBeneficios from "../../components/Contatos/ContatosBeneficios/ContatosBeneficios";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import BotaoTelefone from "../../components/Botoes/BotaoTelefone/BotaoTelefone";
@@ -67,7 +67,12 @@ const Beneficios = () => {
           <BsInstagram className="BsInstagram" />
           <FaLinkedin className="FaLinkedin" />
         </div>
-        <IntroBeneficios />
+        <IntroReutilizavel
+          showH3={true}
+          showH4={true}
+          showYoutube={false}
+          showP={true}
+        />
         <Separacao />
         <Baner
           src={require("../../img/Homepage/block_images/vuit-beneficios.png")}
