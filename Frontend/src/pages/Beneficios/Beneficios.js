@@ -13,6 +13,7 @@ import { BsInstagram } from "react-icons/bs";
 import Baner from "../../components/Baner/Baner";
 import "./Beneficios.css";
 import ListaReutilizavel from "../../components/Conteudo/ListaReutilizavel/ListaReutilizavel";
+import ParagListReutilizavel from "../../components/Conteudo/ParagListReutilizavel/ParagListReutilizavel";
 
 const Beneficios = () => {
   const listaDoBackEnd1 = [
@@ -33,6 +34,8 @@ const Beneficios = () => {
     "SEGURO DE SAUDE, DENTAL E TELEMEDICINA",
     "CRÉDITO CONSIGNADO (VUIT CRED)",
   ];
+
+  const listaDoBackEnd3 = ["Custos reduzidos", "Processos personalizados"];
 
   return (
     <div id="beneficios">
@@ -61,7 +64,10 @@ const Beneficios = () => {
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-nacional.png")} />
-        <p>Atuacao Nacional</p>
+        <ParagListReutilizavel
+          listaDoBackEnd={listaDoBackEnd3}
+          titulo="Devido à capilaridade de clientes distribuídos em todos os estados brasileiros, é possível conquistar reduções nas taxas, nos custos e personalizar processos."
+        />
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
         <Baner
