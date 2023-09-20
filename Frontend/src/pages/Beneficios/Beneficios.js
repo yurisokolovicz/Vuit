@@ -3,7 +3,7 @@ import React from "react";
 import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
-import credImage from "../../../src/img/cred/block_images/vuit-img.png";
+import BeneficiosImage from "../../../src/img/beneficios/block_images/vuitcred.png";
 import IntroReutilizavel from "../../components/Intro/IntroReutilizavel/IntroReutilizavel";
 import ContatosBeneficios from "../../components/Contatos/ContatosBeneficios/ContatosBeneficios";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
@@ -59,7 +59,11 @@ const Beneficios = () => {
   return (
     <div id="beneficios">
       <div className="container-beneficios">
-        <img src={credImage} alt="Background" />
+        <img
+          className="beneficios-image"
+          src={BeneficiosImage}
+          alt="Background"
+        />
         <p>PRATICIDADE NA GESTÃO DE BENEFÍCIOS</p>
         <div className="beneficios-icons-container">
           <MdEmail className="MdEmail" />

@@ -18,6 +18,10 @@
   width: 50%;
 }
 
+.container-beneficios .beneficios-image {
+  width: 700px;
+}
+
 .beneficios-icons-container {
   cursor: pointer;
   margin-top: 10px;
