@@ -12,8 +12,8 @@ import BotaoProposta from "../../components/Botoes/BotaoProposta/BotaoProposta";
 import Baner from "../../components/Baner/Baner";
 import ListaReutilizavel from "../../components/Conteudo/ListaReutilizavel/ListaReutilizavel";
 import ParagListReutilizavel from "../../components/Conteudo/ParagListReutilizavel/ParagListReutilizavel";
-import "./Beneficios.css";
 import ContatosReutilizavel from "../../components/Contatos/ContatosReutilizavel";
+import "./Beneficios.css";
 
 const Beneficios = () => {
   ///////// Intro /////////
