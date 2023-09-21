@@ -6,11 +6,11 @@
 }
 
 .video-container .parag-container {
-  margin: 0 15px;
+  margin: 0 1em;
 }
 
 .video-container h3 {
-  margin-top: 60px;
+  margin-top: 6em;
   align-self: start;
   align-items: left;
 }
@@ -19,13 +19,13 @@
   color: #f0c674;
   align-self: start;
   align-items: left;
-  margin-top: -10px;
+  margin-top: -1em;
 }
 
 .video-container p {
-  margin-top: 30px;
+  margin-top: 3em;
 }
 
 .video-container p:last-child {
-  margin-top: 5px;
+  margin-top: 0.5em;
 }
