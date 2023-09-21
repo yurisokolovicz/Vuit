@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getIntro } from "../../services/intro";
 import { getLista } from "../../services/lista";
+import { getHibrido } from "../../services/hibrido";
 
 import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
@@ -20,11 +21,13 @@ import "./Beneficios.css";
 const Beneficios = () => {
   const [intro, setIntro] = useState([]);
   const [lista, setLista] = useState([]);
+  const [hibrido, setHibrido] = useState([]);
 
   ///////// Intro /////////
   useEffect(() => {
     fetchIntro();
     fetchLista();
+    fetchHibrido();
   }, []);
 
   const fetchIntro = async () => {
@@ -41,15 +44,11 @@ const Beneficios = () => {
   console.log(lista);
 
   ///////// ParagListReutilizavel /////////
-
-  const tituloDoBackEndParagList2 = [
-    "Devido à capilaridade de clientes distribuídos em todos os estados brasileiros, é possível conquistar reduções nas taxas, nos custos e personalizar processos.",
-  ];
-
-  const listaDoBackEndParagList2 = [
-    "Custos reduzidos",
-    "Processos personalizados",
-  ];
+  const fetchHibrido = async () => {
+    const hibridoAPI = await getHibrido();
+    setHibrido(hibridoAPI);
+  };
+  console.log(hibrido);
 
   return (
     <div id="beneficios">
@@ -94,8 +93,8 @@ const Beneficios = () => {
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-nacional.png")} />
         <ParagListReutilizavel
-          titulo={tituloDoBackEndParagList2}
-          conteudo={listaDoBackEndParagList2}
+          titulo={hibrido.length > 0 ? hibrido[3].titulo : ""}
+          conteudo={hibrido.length > 0 ? hibrido[3].conteudo : ""}
         />
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
