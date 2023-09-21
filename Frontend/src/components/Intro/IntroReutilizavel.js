@@ -1,6 +1,6 @@
 import React from "react";
 
-import Youtube from "../../Youtube/Youtube";
+import Youtube from "../Youtube/Youtube";
 import "./IntroReutilizavel.css";
 
 const IntroReutilizavel = ({

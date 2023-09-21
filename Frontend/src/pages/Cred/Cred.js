@@ -4,8 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import credImage from "../../../src/img/cred/block_images/vuit-img.png";
-import IntroReutilizavel from "../../components/Intro/IntroReutilizavel/IntroReutilizavel";
-import ContatosCred from "../../components/Contatos/ContatosCred/ContatosCred";
+import IntroReutilizavel from "../../components/Intro/IntroReutilizavel";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import BotaoTelefone from "../../components/Botoes/BotaoTelefone/BotaoTelefone";
 import Separacao from "../../components/Separacao/Separacao";
@@ -14,6 +13,7 @@ import Baner from "../../components/Baner/Baner";
 import ListaReutilizavel from "../../components/Conteudo/ListaReutilizavel/ListaReutilizavel";
 import ParagListReutilizavel from "../../components/Conteudo/ParagListReutilizavel/ParagListReutilizavel";
 import "./Cred.css";
+import ContatosReutilizavel from "../../components/Contatos/ContatosReutilizavel";
 
 const Cred = () => {
   ///////// Intro /////////
@@ -117,7 +117,19 @@ const Cred = () => {
         />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />
-        <ContatosCred />
+        <div className="contato-cred-container">
+          <div className="contato-cred-text-container">
+            <h3>FALE CONOSCO</h3>
+            <h4>VAMOS CONVERSAR?</h4>
+          </div>
+          <div>
+            <p className="contato-parag-container">
+              Venha fazer parte deste ecossistema que tem mudado a vida das
+              pessoas. Será um prazer tê-los conosco.
+            </p>
+          </div>
+        </div>
+        <ContatosReutilizavel />
         <BotaoWhatsapp />
         <BotaoTelefone />
         <Separacao />

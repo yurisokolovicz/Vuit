@@ -4,8 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import BeneficiosImage from "../../../src/img/beneficios/block_images/vuitcred.png";
-import IntroReutilizavel from "../../components/Intro/IntroReutilizavel/IntroReutilizavel";
-import ContatosBeneficios from "../../components/Contatos/ContatosBeneficios/ContatosBeneficios";
+import IntroReutilizavel from "../../components/Intro/IntroReutilizavel";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import BotaoTelefone from "../../components/Botoes/BotaoTelefone/BotaoTelefone";
 import Separacao from "../../components/Separacao/Separacao";
@@ -14,6 +13,7 @@ import Baner from "../../components/Baner/Baner";
 import ListaReutilizavel from "../../components/Conteudo/ListaReutilizavel/ListaReutilizavel";
 import ParagListReutilizavel from "../../components/Conteudo/ParagListReutilizavel/ParagListReutilizavel";
 import "./Beneficios.css";
+import ContatosReutilizavel from "../../components/Contatos/ContatosReutilizavel";
 
 const Beneficios = () => {
   ///////// Intro /////////
@@ -127,7 +127,10 @@ const Beneficios = () => {
         />
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
-        <ContatosBeneficios />
+        <div className="contato-benef-container">
+          <h3>CONTATO</h3>
+        </div>
+        <ContatosReutilizavel />
         <BotaoWhatsapp />
         <BotaoTelefone />
         <Separacao />

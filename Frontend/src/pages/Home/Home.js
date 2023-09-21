@@ -4,8 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneSquare, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import vuitImage from "../../../src/img/Homepage/block_images/vuit-img.png";
-import IntroReutilizavel from "../../components/Intro/IntroReutilizavel/IntroReutilizavel";
-import ContatosHome from "../../components/Contatos/ContatosHome/ContatosHome";
+import IntroReutilizavel from "../../components/Intro/IntroReutilizavel";
 import BotaoWhatsapp from "../../components/Botoes/BotaoWhatsapp/BotaoWhatsapp";
 import BotaoTelefone from "../../components/Botoes/BotaoTelefone/BotaoTelefone";
 import Separacao from "../../components/Separacao/Separacao";
@@ -15,6 +14,7 @@ import Baner from "../../components/Baner/Baner";
 import ListaReutilizavel from "../../components/Conteudo/ListaReutilizavel/ListaReutilizavel";
 import ParagReutilizavel from "../../components/Conteudo/ParagReutilizavel/ParagReutilizavel";
 import RetanguloExpansivo from "../../components/RetanguloExpansivo/RetanguloExpansivo";
+import ContatosReutilizavel from "../../components/Contatos/ContatosReutilizavel";
 import "./Home.css";
 
 const Home = () => {
@@ -151,7 +151,8 @@ const Home = () => {
         <ParagReutilizavel paragrafoDoBackEnd={paragrafoHome} />
         <BotaoProposta texto="Solicite uma proposta Vuit Cred" />
         <Separacao />
-        <ContatosHome />
+        <h3>CONTATOS:</h3>
+        <ContatosReutilizavel />
         <BotaoWhatsapp />
         <BotaoTelefone />
         <Separacao />
