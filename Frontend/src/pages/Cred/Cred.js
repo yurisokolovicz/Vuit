@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getIntro } from "../../services/intro";
 import { getLista } from "../../services/lista";
+import { getHibrido } from "../../services/hibrido";
 
 import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
@@ -20,11 +21,13 @@ import "./Cred.css";
 const Cred = () => {
   const [intro, setIntro] = useState([]);
   const [lista, setLista] = useState([]);
+  const [hibrido, setHibrido] = useState([]);
 
   ///////// Intro /////////
   useEffect(() => {
     fetchIntro();
     fetchLista();
+    fetchHibrido();
   }, []);
 
   const fetchIntro = async () => {
@@ -41,31 +44,11 @@ const Cred = () => {
   console.log(lista);
 
   ///////// ParagListReutilizavel /////////
-  const tituloDoBackEndParagList1 = [
-    "A Vuit Cred é uma empresa do Grupo Vuit e é responsável pela gestão de mais de 150 mil pessoas e mais de 1.500 empresas assistidas por seus produtos e benefícios.",
-  ];
-  const listaDoBackEndParagList1 = [
-    "Mais de 150 mil pessoas",
-    "Mais de 1500 empresas",
-  ];
-
-  const tituloDoBackEndParagList2 = [
-    "Contratando o crédito consignado com a Vuit Cred é possível ajudar os seus colaboradores a terem crédito de forma ágil e simples, sem burocracia, sendo um facilitador ao RH da empresa.",
-  ];
-
-  const listaDoBackEndParagList2 = [
-    "Menor taxa de juros",
-    "Educação financeira de qualidade sem burocracia",
-  ];
-
-  const tituloDoBackEndParagList3 = [
-    "Devido à capilaridade de clientes distribuídos em todos os estados brasileiros, é possível conquistar reduções nas taxas, nos custos e personalizar processos.",
-  ];
-
-  const listaDoBackEndParagList3 = [
-    "Custos reduzidos",
-    "Processos personalizados",
-  ];
+  const fetchHibrido = async () => {
+    const hibridoAPI = await getHibrido();
+    setHibrido(hibridoAPI);
+  };
+  console.log(hibrido);
 
   return (
     <div id="cred">
@@ -91,22 +74,22 @@ const Cred = () => {
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-cred.png")} />
         <ParagListReutilizavel
-          titulo={tituloDoBackEndParagList1}
-          conteudo={listaDoBackEndParagList1}
+          titulo={hibrido.length > 0 ? hibrido[0].titulo : ""}
+          conteudo={hibrido.length > 0 ? hibrido[0].conteudo : ""}
         />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-escolha.png")} />
         <ParagListReutilizavel
-          titulo={tituloDoBackEndParagList2}
-          conteudo={listaDoBackEndParagList2}
+          titulo={hibrido.length > 0 ? hibrido[1].titulo : ""}
+          conteudo={hibrido.length > 0 ? hibrido[1].conteudo : ""}
         />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-nacional.png")} />
         <ParagListReutilizavel
-          titulo={tituloDoBackEndParagList3}
-          conteudo={listaDoBackEndParagList3}
+          titulo={hibrido.length > 0 ? hibrido[2].titulo : ""}
+          conteudo={hibrido.length > 0 ? hibrido[2].conteudo : ""}
         />
         <Baner src={require("../../img/cred/block_images/vuit-parceria.png")} />
         <Separacao />
