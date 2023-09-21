@@ -5,6 +5,7 @@ const rotaIntro = require("./routes/intro");
 const rotaRetang = require("./routes/retangulo");
 const rotaHome = require("./routes/home");
 const rotaLista = require("./routes/lista");
+const rotaHibrido = require("./routes/hibrido");
 const cors = require("cors");
 
 const app = express();
@@ -15,6 +16,7 @@ app.use("/api/intro", rotaIntro);
 app.use("/api/retangulo", rotaRetang);
 app.use("/api/home", rotaHome);
 app.use("/api/lista", rotaLista);
+app.use("/api/hibrido", rotaHibrido);
 
 const port = process.env.PORT;
 
