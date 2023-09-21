@@ -32,7 +32,7 @@ const Home = () => {
   };
   console.log(intro);
 
-  ///////// RetanguloExpansivo /////////
+  ///////// RetanguloHome /////////
   const tituloBloco1 = ["Seguro de vida em grupo e acidentes pessoais"];
 
   const conteudoBloco1 = [

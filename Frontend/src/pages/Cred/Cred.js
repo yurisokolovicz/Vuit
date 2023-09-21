@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getIntro } from "../../services/intro";
 
 import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
@@ -16,18 +17,18 @@ import ContatosReutilizavel from "../../components/Contatos/ContatosReutilizavel
 import "./Cred.css";
 
 const Cred = () => {
-  ///////// Intro /////////
-  const textoIntroParagrafo1 = `
-    Vuit surge da necessidade de expansão de uma grande operação já
-    existente, orientada para a customização da gestão de seguros de vida,
-    saúde, crédito consignado e benefícios às empresas e empregados.
-  `;
+  const [intro, setIntro] = useState([]);
 
-  const textoIntroParagrafo2 = `
-    Focada na consultoria de seguros e benefícios, a Vuit quebra
-    paradigmas no mercado atuando de forma disruptiva com conceitos
-    colaborativos que promovem todo o ecossistema envolvido.
-  `;
+  ///////// Intro /////////
+  useEffect(() => {
+    fetchIntro();
+  }, []);
+
+  const fetchIntro = async () => {
+    const IntroHomeAPI = await getIntro();
+    setIntro(IntroHomeAPI);
+  };
+  console.log(intro);
 
   ///////// ParagListReutilizavel /////////
   const tituloDoBackEndParagList1 = [
@@ -84,8 +85,8 @@ const Cred = () => {
           showP={true}
           youtubeSrc="https://www.youtube.com/embed/kdPSpUR9BLY?si=w3qNc5oU6pqDucBm"
           youtubeTitle="Vuit Cred"
-          paragrafo1={textoIntroParagrafo1}
-          paragrafo2={textoIntroParagrafo2}
+          paragrafo1={intro.length > 0 ? intro[0].descricao : ""}
+          paragrafo2={intro.length > 1 ? intro[1].descricao : ""}
         />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-cred.png")} />
