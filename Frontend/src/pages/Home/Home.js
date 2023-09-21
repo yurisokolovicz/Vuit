@@ -98,30 +98,13 @@ const Home = () => {
           src={require("../../img/Homepage/block_images/vuit-seguros.png")}
         />
         <div className="container-retangulos">
-          <RetanguloExpansivo
-            titulo={retangulo.length > 0 ? retangulo[0].titulo : ""}
-            conteudo={retangulo.length > 0 ? retangulo[0].descricao : ""}
-          />
-          <RetanguloExpansivo
-            titulo={retangulo.length > 1 ? retangulo[1].titulo : ""}
-            conteudo={retangulo.length > 1 ? retangulo[1].descricao : ""}
-          />
-          <RetanguloExpansivo
-            titulo={retangulo.length > 2 ? retangulo[2].titulo : ""}
-            conteudo={retangulo.length > 2 ? retangulo[2].descricao : ""}
-          />
-          <RetanguloExpansivo
-            titulo={retangulo.length > 3 ? retangulo[3].titulo : ""}
-            conteudo={retangulo.length > 3 ? retangulo[3].descricao : ""}
-          />
-          <RetanguloExpansivo
-            titulo={retangulo.length > 4 ? retangulo[4].titulo : ""}
-            conteudo={retangulo.length > 4 ? retangulo[4].descricao : ""}
-          />
-          <RetanguloExpansivo
-            titulo={retangulo.length > 5 ? retangulo[5].titulo : ""}
-            conteudo={retangulo.length > 5 ? retangulo[5].descricao : ""}
-          />
+          {retangulo.map((item) => (
+            <RetanguloExpansivo
+              key={item.id}
+              titulo={item.titulo}
+              conteudo={item.descricao}
+            />
+          ))}
         </div>
         <BotaoProposta
           className="home-separacao"
