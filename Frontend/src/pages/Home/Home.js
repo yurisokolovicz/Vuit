@@ -20,17 +20,17 @@ import "./Home.css";
 
 const Home = () => {
   ///////// Intro /////////
-  const [intro, setIntro] = useState([]);
+  // const [intro, setIntro] = useState([]);
 
-  useEffect(() => {
-    fetchIntro();
-  }, []);
+  // useEffect(() => {
+  //   fetchIntro();
+  // }, []);
 
-  const fetchIntro = async () => {
-    const IntroHomeAPI = await getIntro();
-    setIntro(IntroHomeAPI);
-    // console.log(IntroHomeAPI);
-  };
+  // const fetchIntro = async () => {
+  //   const IntroHomeAPI = await getIntro();
+  //   setIntro(IntroHomeAPI);
+  //   // console.log(IntroHomeAPI);
+  // };
 
   const textoIntroParagrafo1 = `
     Vuit surge da necessidade de expansão de uma grande operação já
