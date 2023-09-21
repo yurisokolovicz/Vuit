@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getIntro } from "../../services/intro";
 import { getRetang } from "../../services/retangulo";
+import { getHome } from "../../services/home";
 
 import { MdEmail } from "react-icons/md";
 import { FaPhoneSquare, FaFacebook, FaLinkedin } from "react-icons/fa";
@@ -22,11 +23,13 @@ import "./Home.css";
 const Home = () => {
   const [intro, setIntro] = useState([]);
   const [retangulo, setRetangulo] = useState([]);
+  const [home, setHome] = useState([]);
 
   ///////// Intro /////////
   useEffect(() => {
     fetchIntro();
     fetchRetangulo();
+    fetchHome();
   }, []);
 
   const fetchIntro = async () => {
@@ -42,6 +45,13 @@ const Home = () => {
   };
   console.log(retangulo);
 
+  ///////// paragrafoHome /////////
+  const fetchHome = async () => {
+    const homeAPI = await getHome();
+    setHome(homeAPI);
+  };
+  console.log(home);
+
   ///////// ListaReutilizavel /////////
   const tituloDoBackEnd1 = [
     "Conheça as vantagens das empresas que utilizam Vuit Benefícios:",
@@ -55,18 +65,6 @@ const Home = () => {
     "Implantação diferenciada aos clientes;",
     "Praticidade na gestão dos benefícios e relatórios;",
     "Possibilidade de negociação diferenciada.",
-  ];
-
-  ///////// paragrafoHome /////////
-  const paragrafoHome = [
-    "A Vuit Cred é uma empresa do Grupo Vuit, que é responsável pela gestão de mais de 150 mil pessoas e mais de 1.500 empresas assistidas por seus produtos e benefícios.",
-    "Devido à capilaridade de clientes espalhados em todos os estados brasileiros, foi possível conquistar reduções nas taxas, nos custos e personalizar os processos.",
-    "Contratando o crédito consignado com a Vuit Cred é possível ajudar seus colaboradores a terem crédito ágil e simples, tudo com desburocratização, sendo um facilitador ao RH da empresa.",
-    "- MENOR TAXA DE JUROS",
-    "- EDUCAÇÃO FINANCEIRA E DE QUALIDADE",
-    "41 2101 1724",
-    "41 99267 2010",
-    "@VUITCRED",
   ];
 
   return (
@@ -121,7 +119,10 @@ const Home = () => {
         <BotaoProposta texto="Solicite uma proposta Vuit Benefícios" />
         <Separacao />
         <Baner src={require("../../img/Homepage/block_images/vuit-cred.png")} />
-        <ParagReutilizavel paragrafoDoBackEnd={paragrafoHome} />
+        {home.map((item) => (
+          <ParagReutilizavel key={item.id} paragrafo={[item.paragrafo]} />
+        ))}
+
         <BotaoProposta texto="Solicite uma proposta Vuit Cred" />
         <Separacao />
         <h3>CONTATOS:</h3>
