@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getIntro } from "../../services/intro";
+import { getLista } from "../../services/lista";
 
 import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
@@ -18,10 +19,12 @@ import "./Cred.css";
 
 const Cred = () => {
   const [intro, setIntro] = useState([]);
+  const [lista, setLista] = useState([]);
 
   ///////// Intro /////////
   useEffect(() => {
     fetchIntro();
+    fetchLista();
   }, []);
 
   const fetchIntro = async () => {
@@ -29,6 +32,13 @@ const Cred = () => {
     setIntro(IntroHomeAPI);
   };
   console.log(intro);
+
+  ///////// ListaReutilizavel /////////
+  const fetchLista = async () => {
+    const listaAPI = await getLista();
+    setLista(listaAPI);
+  };
+  console.log(lista);
 
   ///////// ParagListReutilizavel /////////
   const tituloDoBackEndParagList1 = [
@@ -55,16 +65,6 @@ const Cred = () => {
   const listaDoBackEndParagList3 = [
     "Custos reduzidos",
     "Processos personalizados",
-  ];
-
-  ///////// ListaReutilizavel /////////
-  const tituloDoBackEndListReut1 = [];
-
-  const listaDoBackEndListReut1 = [
-    "Apoio em eventos e campanhas da empresa ou instituição",
-    "Ações comerciais para colaboradores e parceiros",
-    "Rebate de até 2% para a empresa sobre a produção mensal paga",
-    "Curso de educação financeira, digital, gratuito e com certificado para todos os colaboradores",
   ];
 
   return (
@@ -112,8 +112,8 @@ const Cred = () => {
         <Separacao />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
         <ListaReutilizavel
-          titulo={tituloDoBackEndListReut1}
-          conteudo={listaDoBackEndListReut1}
+          titulo={lista.length > 0 ? lista[1].titulo : ""}
+          conteudo={lista.length > 0 ? lista[1].conteudo : ""}
           uppercase={true}
         />
         <BotaoProposta texto="Solicite uma proposta Vuit cred" />
