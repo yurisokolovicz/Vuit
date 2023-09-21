@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getIntro } from "../../services/intro";
+import { getLista } from "../../services/lista";
 
 import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
@@ -18,10 +19,12 @@ import "./Beneficios.css";
 
 const Beneficios = () => {
   const [intro, setIntro] = useState([]);
+  const [lista, setLista] = useState([]);
 
   ///////// Intro /////////
   useEffect(() => {
     fetchIntro();
+    fetchLista();
   }, []);
 
   const fetchIntro = async () => {
@@ -30,12 +33,14 @@ const Beneficios = () => {
   };
   console.log(intro);
 
-  ///////// ParagListReutilizavel /////////
-  const tituloDoBackEndParagList1 = [
-    "A Vuit Benefícios é uma empresa do Grupo Vuit responsável pela implantação de benefícios para milhares de colaboradores de empresas de todo país.",
-  ];
+  ///////// ListaReutilizavel /////////
+  const fetchLista = async () => {
+    const listaAPI = await getLista();
+    setLista(listaAPI);
+  };
+  console.log(lista);
 
-  const listaDoBackEndParagList1 = [];
+  ///////// ParagListReutilizavel /////////
 
   const tituloDoBackEndParagList2 = [
     "Devido à capilaridade de clientes distribuídos em todos os estados brasileiros, é possível conquistar reduções nas taxas, nos custos e personalizar processos.",
@@ -44,30 +49,6 @@ const Beneficios = () => {
   const listaDoBackEndParagList2 = [
     "Custos reduzidos",
     "Processos personalizados",
-  ];
-
-  ///////// ListaReutilizavel /////////
-  const tituloDoBackEndListReut1 = [];
-
-  const listaDoBackEndListReut1 = [
-    "Implantação diferenciada aos clientes",
-    "Praticidade na gestão dos benefícios e relatórios",
-    "Possibilidade de negociação financeira",
-    "A sodexo possui vasta rede credenciada em todo território nacional",
-    "Redução da folha de pagamento",
-    "Redução do tempo de recrutamento",
-    "Redução com absenteísmos",
-  ];
-
-  const tituloDoBackEndListReut2 = [];
-
-  const listaDoBackEndListReut2 = [
-    "Seguros de vida em grupo",
-    "Acidentes pessoais",
-    "Seguro garantia e garantia judicial",
-    "Responsabilidade civil e prestação de serviços",
-    "Seguro de Saúde, dental e telemedicina",
-    "crédito consignado (vuit cred)",
   ];
 
   return (
@@ -98,15 +79,15 @@ const Beneficios = () => {
           src={require("../../img/Homepage/block_images/vuit-beneficios.png")}
         />
         <ListaReutilizavel
-          titulo={tituloDoBackEndParagList1}
-          conteudo={listaDoBackEndParagList1}
+          titulo={lista.length > 0 ? lista[2].titulo : ""}
+          conteudo={lista.length > 0 ? lista[2].conteudo : ""}
         />
         <BotaoProposta texto="Solicite uma proposta" />
         <Separacao />
         <Baner src={require("../../img/cred/block_images/vuit-escolha.png")} />
         <ListaReutilizavel
-          titulo={tituloDoBackEndListReut1}
-          conteudo={listaDoBackEndListReut1}
+          titulo={lista.length > 0 ? lista[3].titulo : ""}
+          conteudo={lista.length > 0 ? lista[3].conteudo : ""}
           uppercase={true}
         />
         <BotaoProposta texto="Solicite uma proposta" />
@@ -122,8 +103,8 @@ const Beneficios = () => {
           src={require("../../img/beneficios/block_images/vuit-outros-servicos.png")}
         />
         <ListaReutilizavel
-          titulo={tituloDoBackEndListReut2}
-          conteudo={listaDoBackEndListReut2}
+          titulo={lista.length > 0 ? lista[4].titulo : ""}
+          conteudo={lista.length > 0 ? lista[4].conteudo : ""}
           uppercase={true}
         />
         <BotaoProposta texto="Solicite uma proposta" />

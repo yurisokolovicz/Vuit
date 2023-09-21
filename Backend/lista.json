@@ -24,6 +24,11 @@
   },
   {
     "id": "3",
+    "titulo": "A Vuit Benefícios é uma empresa do Grupo Vuit responsável pela implantação de benefícios para milhares de colaboradores de empresas de todo país.",
+    "conteudo": []
+  },
+  {
+    "id": "4",
     "titulo": "",
     "conteudo": [
       "Implantação diferenciada aos clientes",
@@ -36,7 +41,7 @@
     ]
   },
   {
-    "id": "4",
+    "id": "5",
     "titulo": "",
     "conteudo": [
       "Seguros de vida em grupo",
