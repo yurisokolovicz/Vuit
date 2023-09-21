@@ -129,7 +129,7 @@ const Cred = () => {
             </p>
           </div>
         </div>
-        <ContatosReutilizavel />
+        <ContatosReutilizavel link={"https://www.instagram.com/vuitcred/"} />
         <BotaoWhatsapp />
         <BotaoTelefone />
         <Separacao />

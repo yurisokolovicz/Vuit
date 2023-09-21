@@ -152,7 +152,7 @@ const Home = () => {
         <BotaoProposta texto="Solicite uma proposta Vuit Cred" />
         <Separacao />
         <h3>CONTATOS:</h3>
-        <ContatosReutilizavel />
+        <ContatosReutilizavel link={"https://www.instagram.com/vuitseguros/"} />
         <BotaoWhatsapp />
         <BotaoTelefone />
         <Separacao />

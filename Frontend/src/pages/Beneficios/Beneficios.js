@@ -130,7 +130,9 @@ const Beneficios = () => {
         <div className="contato-benef-container">
           <h3>CONTATO</h3>
         </div>
-        <ContatosReutilizavel />
+        <ContatosReutilizavel
+          link={"https://www.instagram.com/vuitbeneficios/"}
+        />
         <BotaoWhatsapp />
         <BotaoTelefone />
         <Separacao />

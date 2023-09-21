@@ -3,11 +3,11 @@ import React from "react";
 import Instagram from "../Instagram/Instagram";
 import "./ContatosReutilizavel.css";
 
-const ContatosReutilizavel = () => {
+const ContatosReutilizavel = ({ link }) => {
   return (
     <div className="contato-container">
       <div className="instagram-center">
-        <Instagram link="https://www.instagram.com/vuitcred/" />
+        <Instagram link={link} />
       </div>
     </div>
   );
