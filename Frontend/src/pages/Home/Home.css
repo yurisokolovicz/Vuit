@@ -5,6 +5,7 @@
   align-items: center;
   background: url("../../../public/img/Homepage/backgrounds/home-background-img.png")
     no-repeat scroll padding-box;
+  background-size: contain;
   padding-top: 60px;
 }
 

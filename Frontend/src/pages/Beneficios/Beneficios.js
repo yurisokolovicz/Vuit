@@ -23,7 +23,6 @@ const Beneficios = () => {
   const [lista, setLista] = useState([]);
   const [hibrido, setHibrido] = useState([]);
 
-  ///////// Intro /////////
   useEffect(() => {
     fetchIntro();
     fetchLista();
@@ -36,14 +35,12 @@ const Beneficios = () => {
   };
   console.log(intro);
 
-  ///////// ListaReutilizavel /////////
   const fetchLista = async () => {
     const listaAPI = await getLista();
     setLista(listaAPI);
   };
   console.log(lista);
 
-  ///////// ParagListReutilizavel /////////
   const fetchHibrido = async () => {
     const hibridoAPI = await getHibrido();
     setHibrido(hibridoAPI);

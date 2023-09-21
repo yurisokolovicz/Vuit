@@ -27,7 +27,6 @@ const Home = () => {
   const [home, setHome] = useState([]);
   const [lista, setLista] = useState([]);
 
-  ///////// Intro /////////
   useEffect(() => {
     fetchIntro();
     fetchRetangulo();
@@ -41,21 +40,18 @@ const Home = () => {
   };
   console.log(intro);
 
-  ///////// RetanguloHome /////////
   const fetchRetangulo = async () => {
     const IntroRetangAPI = await getRetang();
     setRetangulo(IntroRetangAPI);
   };
   console.log(retangulo);
 
-  ///////// paragrafoHome /////////
   const fetchHome = async () => {
     const homeAPI = await getHome();
     setHome(homeAPI);
   };
   console.log(home);
 
-  ///////// ListaReutilizavel /////////
   const fetchLista = async () => {
     const listaAPI = await getLista();
     setLista(listaAPI);
