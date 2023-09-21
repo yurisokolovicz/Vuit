@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getIntro } from "../../services/intro";
 
 import { MdEmail } from "react-icons/md";
 import { FaPhoneSquare, FaFacebook, FaLinkedin } from "react-icons/fa";
@@ -19,6 +20,18 @@ import "./Home.css";
 
 const Home = () => {
   ///////// Intro /////////
+  const [intro, setIntro] = useState([]);
+
+  useEffect(() => {
+    fetchIntro();
+  }, []);
+
+  const fetchIntro = async () => {
+    const IntroHomeAPI = await getIntro();
+    setIntro(IntroHomeAPI);
+    // console.log(IntroHomeAPI);
+  };
+
   const textoIntroParagrafo1 = `
     Vuit surge da necessidade de expansão de uma grande operação já
     existente, orientada para a customização da gestão de seguros de vida,
