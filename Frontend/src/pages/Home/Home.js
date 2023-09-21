@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getIntro } from "../../services/intro";
 import { getRetang } from "../../services/retangulo";
 import { getHome } from "../../services/home";
+import { getLista } from "../../services/lista";
 
 import { MdEmail } from "react-icons/md";
 import { FaPhoneSquare, FaFacebook, FaLinkedin } from "react-icons/fa";
@@ -24,12 +25,14 @@ const Home = () => {
   const [intro, setIntro] = useState([]);
   const [retangulo, setRetangulo] = useState([]);
   const [home, setHome] = useState([]);
+  const [lista, setLista] = useState([]);
 
   ///////// Intro /////////
   useEffect(() => {
     fetchIntro();
     fetchRetangulo();
     fetchHome();
+    fetchLista();
   }, []);
 
   const fetchIntro = async () => {
@@ -53,19 +56,11 @@ const Home = () => {
   console.log(home);
 
   ///////// ListaReutilizavel /////////
-  const tituloDoBackEnd1 = [
-    "Conheça as vantagens das empresas que utilizam Vuit Benefícios:",
-  ];
-
-  const listaDoBackEnd1 = [
-    "A Sodexo possui vasta rede credenciada em todo o território nacional;",
-    "Redução do tempo de recrutamento;",
-    "Redução com absenteísmos;",
-    "Redução da folha de pagamento;",
-    "Implantação diferenciada aos clientes;",
-    "Praticidade na gestão dos benefícios e relatórios;",
-    "Possibilidade de negociação diferenciada.",
-  ];
+  const fetchLista = async () => {
+    const listaAPI = await getLista();
+    setLista(listaAPI);
+  };
+  console.log(lista);
 
   return (
     <div id="home">
@@ -113,8 +108,8 @@ const Home = () => {
           src={require("../../img/Homepage/block_images/vuit-beneficios.png")}
         />
         <ListaReutilizavel
-          titulo={tituloDoBackEnd1}
-          conteudo={listaDoBackEnd1}
+          titulo={lista.length > 0 ? lista[0].titulo : ""}
+          conteudo={lista.length > 0 ? lista[0].conteudo : ""}
         />
         <BotaoProposta texto="Solicite uma proposta Vuit Benefícios" />
         <Separacao />

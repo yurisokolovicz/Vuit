@@ -2,7 +2,7 @@
   {
     "id": "1",
     "titulo": "Conheça as vantagens das empresas que utilizam Vuit Benefícios:",
-    "lista": [
+    "conteudo": [
       "A Sodexo possui vasta rede credenciada em todo o território nacional;",
       "Redução do tempo de recrutamento;",
       "Redução com absenteísmos;",
@@ -15,7 +15,7 @@
   {
     "id": "2",
     "titulo": "",
-    "lista": [
+    "conteudo": [
       "Apoio em eventos e campanhas da empresa ou instituição",
       "Ações comerciais para colaboradores e parceiros",
       "Rebate de até 2% para a empresa sobre a produção mensal paga",
@@ -25,7 +25,7 @@
   {
     "id": "3",
     "titulo": "",
-    "lista": [
+    "conteudo": [
       "Implantação diferenciada aos clientes",
       "Praticidade na gestão dos benefícios e relatórios",
       "Possibilidade de negociação financeira",
@@ -38,7 +38,7 @@
   {
     "id": "4",
     "titulo": "",
-    "lista": [
+    "conteudo": [
       "Seguros de vida em grupo",
       "Acidentes pessoais",
       "Seguro garantia e garantia judicial",

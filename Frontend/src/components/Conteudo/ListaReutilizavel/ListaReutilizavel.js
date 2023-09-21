@@ -11,9 +11,11 @@ const ListaReutilizavel = ({ titulo, conteudo, uppercase }) => {
     <div className="lista-reutilizavel-container">
       {titulo && <p>{titulo}</p>}
       <ul className={listaContainerClass}>
-        {conteudo.map((lista, index) => (
-          <li key={index}>{lista}</li>
-        ))}
+        {Array.isArray(conteudo) ? (
+          conteudo.map((item, index) => <li key={index}>{item}</li>)
+        ) : (
+          <li>{conteudo}</li>
+        )}
       </ul>
     </div>
   );
